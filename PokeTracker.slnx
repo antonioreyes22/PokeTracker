@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="PokeTracker/PokeTracker.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>

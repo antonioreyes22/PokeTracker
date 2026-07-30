@@ -1,0 +1,225 @@
+﻿@page "/showteam"
+@using System.Text
+@using PokeTracker.Models;
+@using PokeTracker.Services;
+
+
+@foreach (var linea in secciones)
+{
+    <p>@linea</p>
+}
+
+@foreach (Pokemon pokemon in pokemonList)
+{
+    <p>Nombre: @pokemon.name || Tipo1: @pokemon.type1 || Tipo2: @pokemon.type2 || Dex: @pokemon.numberPokedex</p>
+}
+
+@code {
+
+    private readonly Dictionary<byte, char> abecedario = new Dictionary<byte, char>
+    {
+        { 0xBB, 'A' }, { 0xBC, 'B' }, { 0xBD, 'C' },
+        { 0xBE, 'D' }, { 0xBF, 'E' }, { 0xC0, 'F' }, { 0xC1, 'G' },
+        { 0xC2, 'H' }, { 0xC3, 'I' }, { 0xC4, 'J' }, { 0xC5, 'K' },
+        { 0xC6, 'L' }, { 0xC7, 'M' }, { 0xC8, 'N' }, { 0xC9, 'O' },
+        { 0xCA, 'P' }, { 0xCB, 'Q' }, { 0xCC, 'R' }, { 0xCD, 'S' },
+        { 0xCE, 'T' }, { 0xCF, 'U' }, { 0xD0, 'V' }, { 0xD1, 'W' },
+        { 0xD2, 'X' }, { 0xD3, 'Y' }, { 0xD4, 'Z' }
+    };
+
+    private readonly Dictionary<int, string> permutations = new Dictionary<int, string>
+    {
+        {0, "GAEM"}, {1, "GAME"}, {2, "GEAM"}, {3, "GEMA"},
+        {4, "GMAE"}, {5, "GMEA"}, {6, "AGEM"}, {7, "AGME"},
+        {8, "AEGM"}, {9, "AEMG"}, {10, "AMGE"}, {11, "AMEG"},
+        {12, "EGAM"}, {13, "EGMA"}, {14, "EAGM"}, {15, "EAMG"},
+        {16, "EMGA"}, {17, "EMAG"}, {18, "MGAE"}, {19, "MGEA"},
+        {20, "MAGE"}, {21, "MAEG"}, {22, "MEGA"}, {23, "MEAG"}
+    };
+
+    private byte[]? bytes;
+    private List<string> secciones = new();
+    private SavReader savReader = new SavReader("emeraldsav6.sav");
+    private List<Pokemon> pokemonList = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        using Stream savStream = await OpenSaveAsync();
+
+        BinaryReader binaryReader = new(savStream);
+
+        byte[] teamSection = GetTeamSection(binaryReader);
+
+        byte count = teamSection[0x234];
+
+        secciones.Add($"Cantidad de Pokémon en el equipo: {count}");
+
+        // Pokemon Team
+
+        byte[] pokemon1 = GetPokemon(teamSection, 0);
+        byte[] pokemon2 = GetPokemon(teamSection, 1);
+        byte[] pokemon3 = GetPokemon(teamSection, 2);
+        byte[] pokemon4 = GetPokemon(teamSection, 3);
+        byte[] pokemon5 = GetPokemon(teamSection, 4);
+
+        string nick1 = GetNickname(pokemon1, 0);
+        string nick2 = GetNickname(pokemon2, 1);
+        string nick3 = GetNickname(pokemon3, 2);
+        string nick4 = GetNickname(pokemon4, 3);
+        string nick5 = GetNickname(pokemon5, 3);
+
+        ushort dex1 = GetPokedexNumber(pokemon1);
+        ushort dex2 = GetPokedexNumber(pokemon2);
+        ushort dex3 = GetPokedexNumber(pokemon3);
+        ushort dex4 = GetPokedexNumber(pokemon4);
+
+        secciones.Add($"Nick del primer Pokémon: {nick1}, Dex: {dex1}");
+        secciones.Add($"Nick del segundo Pokémon: {nick2}, Dex: {dex2}");
+        secciones.Add($"Nick del tercer Pokémon: {nick3}, Dex: {dex3}");
+        secciones.Add($"Nick del cuarto Pokémon: {nick4}, Dex: {dex4}");
+        secciones.Add($"Nick del cuarto Pokémon: {nick5}");
+
+        pokemonList = await savReader.ReadTeam();
+
+        /*
+        byte[] teamSection = ReadSection(binaryReader, 22); // Assuming the team data is in section 0
+        ushort id = BitConverter.ToUInt16(teamSection, 0xFF4);
+        secciones.Add($"Bloque ID de sección = {id}");
+        byte count = teamSection[0x234];
+
+        secciones.Add($"Pokémon en el equipo: {count}");
+        */
+
+
+    for (int i = 0; i < 28; i++)
+        {
+            byte[] section = ReadSection(binaryReader, i);
+
+            ushort id2 = BitConverter.ToUInt16(section, 0xFF4);
+            uint saveIndex = BitConverter.ToUInt32(section, 0xFFC);
+
+            secciones.Add(
+                $"Bloque {i}: ID={id2}, SaveIndex={saveIndex}, Tamaño={section.Length}"
+            );
+        }
+    }
+
+    private async Task<Stream> OpenSaveAsync()
+    {
+        return await FileSystem.Current.OpenAppPackageFileAsync("emeraldsav6.sav");
+    }
+
+    private byte[] ReadSection(BinaryReader binaryReader, int index)
+    {
+        binaryReader.BaseStream.Seek(index * 4096, SeekOrigin.Begin);
+
+        return binaryReader.ReadBytes(4096);
+    }
+
+
+    private byte[] GetTeamSection(BinaryReader binaryReader)
+    {
+        // Comparamos la posicion 0 y la 14
+        byte[] firstSectionId = ReadSection(binaryReader, 0);
+        byte[] secondSectionId = ReadSection(binaryReader, 14);
+        uint firstSectionSaveIndex = BitConverter.ToUInt32(firstSectionId, 0xFFC);
+        uint secondSectionSaveIndex = BitConverter.ToUInt32(secondSectionId, 0xFFC);
+
+        int index = firstSectionSaveIndex > secondSectionSaveIndex ? 0 : 14;
+
+        for (int i=index; i < (index+14); i++)
+        {
+            byte[] section = ReadSection(binaryReader, i);
+
+            ushort id = BitConverter.ToUInt16(section, 0xFF4);
+
+            if (id == 1)
+                return section;
+        }
+
+        return null;
+    }
+
+    private byte[] GetPokemon(byte[] teamSection, int indexTeam)
+    {
+        byte[] pokemon = teamSection
+            .Skip(0x238 + (indexTeam * 100))
+            .Take(100)
+            .ToArray();
+
+        return pokemon;
+    }
+
+    private string GetNickname(byte[] pokemon, int indexTeam)
+    {
+        byte[] nicknameBytes = new byte[10];
+        Array.Copy(pokemon, 0x08, nicknameBytes, 0, 10);
+
+        StringBuilder stringBuilder = new StringBuilder();
+
+        foreach (byte b in nicknameBytes)
+        {
+            if (b == 0XFF)
+                break;
+
+            if (abecedario.TryGetValue(b, out char c))
+            {
+                stringBuilder.Append(c);
+            }
+        }
+
+        return stringBuilder.ToString();
+    }
+
+    private uint GetXorKey(byte[] pokemon)
+    {
+        uint personalityValue = BitConverter.ToUInt32(pokemon, 0x00);
+        uint uid = BitConverter.ToUInt32(pokemon, 0x04);
+
+        uint xorkey = personalityValue ^ uid;
+
+        return xorkey;
+    }
+
+    private byte[] DecryptPokemonData(byte[] pokemon)
+    {
+        byte[] decrypted = new byte[48];
+        uint xorkey = GetXorKey(pokemon);
+
+        for (int i = 0; i < 12; i++)
+        {
+            uint value = BitConverter.ToUInt32(pokemon, 0x20 + (i * 4));
+            value ^= xorkey;
+            Array.Copy(BitConverter.GetBytes(value), 0, decrypted, i*4, 4);
+        }
+
+        return decrypted;
+    }
+
+    private ushort GetPokedexNumber(byte[] pokemon)
+    {
+        byte[] pokemonData = DecryptPokemonData(pokemon);
+        uint pid = BitConverter.ToUInt32(pokemon, 0x00);
+        uint order = pid % 24;
+        string orderString = permutations[(int)order];
+
+        // Get letter G from dictionary
+
+        int index = 0;
+        foreach (char c in orderString)
+        {
+            if (c == 'G')
+                break;
+
+            index++;
+        }
+
+        ushort speciesId = BitConverter.ToUInt16(pokemonData, index * 12);
+        ushort pokedexNumber = speciesId;
+
+        if (speciesId > 251)
+            pokedexNumber -= 25;
+
+        return pokedexNumber;
+    }
+}
