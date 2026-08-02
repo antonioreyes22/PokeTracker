@@ -1,0 +1,22 @@
+﻿.page .top-row.main-navbar {
+    background: #000000;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 1) 0%, rgba(40, 40, 40, 1) 48%, rgba(117, 117, 117, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+    
+}
+
+.page .top-row.main-navbar a {
+    color: yellow;
+    text-shadow: 1.5px 1.5px blue;
+    text-decoration: none;
+    transition: all ease 0.2s;
+}
+
+.page .top-row.main-navbar a:hover {
+    transform: scale(1.1);
+    color: white;
+}

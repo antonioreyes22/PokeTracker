@@ -36,7 +36,7 @@ namespace PokeTracker.Services
             {20, "MAGE"}, {21, "MAEG"}, {22, "MEGA"}, {23, "MEAG"}
         };
 
-        private async Task<Stream> OpenSaveAsync() 
+        private async Task<Stream> OpenSaveAsync()
         {
             return await FileSystem.Current.OpenAppPackageFileAsync(savName);
         }
@@ -89,7 +89,7 @@ namespace PokeTracker.Services
             byte[] teamSection = GetTeamSection(binaryReader);
 
             // Get pokemon count
-            int count = (int) BitConverter.ToUInt32(teamSection, 0x234);
+            int count = (int)BitConverter.ToUInt32(teamSection, 0x234);
 
             return count;
         }
@@ -150,7 +150,7 @@ namespace PokeTracker.Services
             return speciesId;
         }
 
-        public async Task<List<Pokemon>> ReadTeam() 
+        public async Task<List<Pokemon>> ReadTeam()
         {
             // Data
             Stream stream = await OpenSaveAsync();
@@ -165,7 +165,7 @@ namespace PokeTracker.Services
             // Get each pokemon in Bytes
             List<byte[]> pokemon = new List<byte[]>();
 
-            for(int i=0; i<count; i++) 
+            for (int i = 0; i < count; i++)
             {
                 byte[] currentPokemon = GetPokemon(teamSection, i);
                 pokemon.Add(currentPokemon);
@@ -185,16 +185,119 @@ namespace PokeTracker.Services
             List<Pokemon> pokemonData = JsonSerializer.Deserialize<List<Pokemon>>(json) ?? new();
             List<Pokemon> finalList = new List<Pokemon>();
 
-            for (int i=0; i<count; i++) 
+            for (int i = 0; i < count; i++)
             {
-                // Find equal SpeciesId in Json
-                Pokemon? pkmn = pokemonData.FirstOrDefault(x => x.speciesId == speciesidList[i]);
+                Pokemon? basePokemon = pokemonData.FirstOrDefault(x => x.speciesId == speciesidList[i]);
 
-                if(pkmn != null)
+                if (basePokemon != null)
+                {
+                    Pokemon pkmn = new Pokemon
+                    {
+                        speciesId = basePokemon.speciesId,
+                        numberPokedex = basePokemon.numberPokedex,
+                        name = basePokemon.name,
+                        type1 = basePokemon.type1,
+                        type2 = basePokemon.type2,
+
+                        nickname = GetNickname(pokemon[i]),
+                        hp = GetHp(pokemon[i]),
+                        maxHp = GetMaxHp(pokemon[i]),
+                        atq = GetAttack(pokemon[i]),
+                        spAtq = GetSpAttack(pokemon[i]),
+                        def = GetDefense(pokemon[i]),
+                        spDef = GetSpDefense(pokemon[i]),
+                        spe = GetSpeed(pokemon[i]),
+
+                        ImagePath = $"images/pkmn/{basePokemon.numberPokedex}.png"
+                    };
                     finalList.Add(pkmn);
+                }
             }
 
             return finalList;
+        }
+
+        public byte[] GetEvAndCondition(byte[] pokemon)
+        {
+            // Data
+            byte[] pokemonData = DecryptPokemonData(pokemon);
+            uint pid = BitConverter.ToUInt32(pokemon, 0x00);
+            uint order = pid % 24;
+            string orderString = permutations[(int)order];
+
+            // Get letter E from dictionary
+
+            int index = 0;
+            foreach (char c in orderString)
+            {
+                if (c == 'E')
+                    break;
+
+                index++;
+            }
+
+            byte[] evCondition = pokemonData
+                .Skip(index * 12)
+                .Take(12)
+                .ToArray();
+
+            return evCondition;
+        }
+
+        private string GetNickname(byte[] pokemon)
+        {
+            byte[] nicknameBytes = new byte[10];
+            Array.Copy(pokemon, 0x08, nicknameBytes, 0, 10);
+
+            StringBuilder stringBuilder = new StringBuilder();
+
+            foreach (byte b in nicknameBytes)
+            {
+                if (b == 0XFF)
+                    break;
+
+                if (abecedario.TryGetValue(b, out char c))
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+
+            return stringBuilder.ToString();
+        }
+
+        public ushort GetHp(byte[] pokemon)
+        {
+            return BitConverter.ToUInt16(pokemon, 0x56);
+        }
+
+        public ushort GetMaxHp(byte[] pokemon)
+        {
+            return BitConverter.ToUInt16(pokemon, 0x58);
+        }
+
+        public ushort GetAttack(byte[] pokemon)
+        {
+            return BitConverter.ToUInt16(pokemon, 0x5A);
+        }
+
+        public ushort GetSpAttack(byte[] pokemon) 
+        {
+            return BitConverter.ToUInt16(pokemon, 0x60);
+        }
+
+        public ushort GetDefense(byte[] pokemon)
+        {
+            return BitConverter.ToUInt16(pokemon, 0x5C);
+        }
+
+        public ushort GetSpDefense(byte[] pokemon) 
+        {
+            return BitConverter.ToUInt16(pokemon, 0x62);
+        }
+
+        public ushort GetSpeed(byte[] pokemon) 
+        {
+            return BitConverter.ToUInt16(pokemon, 0x5E);
         }
     }
 }

@@ -1,0 +1,90 @@
+﻿.team-container {
+    display: grid;
+    border: solid 2px black;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 1200px; /* Ancho fijo */
+    height: 500px;
+    margin: 0 auto;
+}
+
+.pokemon-container {
+    display: flex;
+    align-items: center;
+    border: solid 2px blue;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+}
+
+.img-pkmn-css {
+    transform: scale(1.5);
+    margin-top: 30px;
+    margin-left: -240px;
+    border: solid 1px black;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    border: solid 1px black;
+    position: absolute;
+    left: -10px;
+    border: solid 1px black;
+    margin-left: 145px;
+    top: 15px;
+    height: 183px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+   
+.stat {
+    display: grid;
+    grid-template-columns: 80px auto;
+}
+
+.label-stat{
+
+}
+
+.nickname-css {
+    position: absolute;
+    margin-left: -238px;
+    top: 120px;
+}
+
+.name-css {
+    position: absolute;
+    margin-left: -238px;
+    top: 140px;
+}
+
+.hp-css{
+
+}
+
+.maxHp-css{
+
+}
+
+.atq-css{
+
+}
+
+.spAtq-css{
+
+}
+
+.def-css{
+
+}
+
+.spDef-css{
+
+}
+
+.spe-css{
+
+}

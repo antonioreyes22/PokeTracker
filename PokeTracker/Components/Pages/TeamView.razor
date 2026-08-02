@@ -1,0 +1,59 @@
+﻿@page "/teamview"
+@using System.Text
+@using PokeTracker.Models;
+@using PokeTracker.Services;
+
+<div class="team-container">
+    @foreach(Pokemon pokemon in pokemonList)
+    {
+        <div class="pokemon-container">
+            <div class="img-pkmn-css"><img src="@pokemon.ImagePath" alt="@pokemon.name" /></div>
+            <div class="nickname-css">@pokemon.nickname</div>
+            <div class="name-css">@pokemon.name</div>
+
+            <div class="stats-container">
+                <div class="stat">
+                    <span class="label-stat">HP:</span>
+                    <div class="hp-css">@pokemon.hp / @pokemon.maxHp</div>
+                </div>
+
+                <div class="stat">
+                    <span class="label-stat">ATQ:</span>
+                    <div class="atq-css">@pokemon.atq</div>
+                </div>
+
+                <div class="stat">
+                    <span class="label-stat">SP ATQ:</span>
+                    <div class="spAtq-css">@pokemon.spAtq</div>
+                </div>
+
+                <div class="stat">
+                    <span class="label-stat">DEF:</span>
+                    <div class="def-css">@pokemon.def</div>
+                </div>
+
+                <div class="stat">
+                    <span class="label-stat">SP DEF:</span>
+                    <div class="spDef-css">@pokemon.spDef</div>
+                </div>
+
+                <div class="stat">
+                    <span class="label-stat">SPE:</span>
+                    <div class="spe-css">@pokemon.spe</div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private SavReader savReader = new SavReader("emeraldsav8.sav");
+    private List<Pokemon> pokemonList = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        pokemonList = await savReader.ReadTeam();        
+    }
+
+
+}

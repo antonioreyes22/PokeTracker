@@ -12,6 +12,9 @@
 @foreach (Pokemon pokemon in pokemonList)
 {
     <p>Nombre: @pokemon.name || Tipo1: @pokemon.type1 || Tipo2: @pokemon.type2 || Dex: @pokemon.numberPokedex</p>
+    <p>HP: @pokemon.hp || MAX HP: @pokemon.maxHp || ATQ: @pokemon.atq || SP ATQ: @pokemon.spAtq || 
+       DEF: @pokemon.def || DEF ESP: @pokemon.spDef || VEL: @pokemon.spe
+    </p>
 }
 
 @code {

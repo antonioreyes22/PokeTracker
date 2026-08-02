@@ -12,6 +12,7 @@ namespace PokeTracker
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    fonts.AddFont("pkmnfont.ttf", "PkmnFont");
                 });
 
             builder.Services.AddMauiBlazorWebView();
