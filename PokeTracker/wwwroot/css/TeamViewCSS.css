@@ -1,12 +1,12 @@
 ﻿.team-container {
     display: grid;
-    border: solid 2px black;
     padding: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 1200px; /* Ancho fijo */
     height: 500px;
     margin: 0 auto;
+    margin-top: 60px;
 }
 
 .pokemon-container {
@@ -16,6 +16,7 @@
     flex-direction: column;
     margin: 10px;
     position: relative;
+    background-color: rgb(225, 213, 150);
 }
 
 .img-pkmn-css {
@@ -23,42 +24,46 @@
     margin-top: 30px;
     margin-left: -240px;
     border: solid 1px black;
+    background: radial-gradient(circle,rgba(252, 252, 252, 1) 0%, rgba(173, 173, 173, 1) 100%);
 }
 
 .stats-container {
     display: grid;
-    grid-template-columns: 110px 1fr;
-    border: solid 1px black;
+    grid-template-columns: 110px 110px;
     position: absolute;
     left: -10px;
-    border: solid 1px black;
-    margin-left: 145px;
+    margin-left: 135px;
     top: 15px;
     height: 183px;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding-inline: 20px;
 }
    
 .stat {
     display: grid;
-    grid-template-columns: 80px auto;
+    grid-template-columns: auto auto;
 }
 
 .label-stat{
+    font-weight: bold;
+}
 
+.name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -240px;
+    margin-top: 30px;
 }
 
 .nickname-css {
-    position: absolute;
-    margin-left: -238px;
-    top: 120px;
+
 }
 
 .name-css {
-    position: absolute;
-    margin-left: -238px;
-    top: 140px;
+
 }
 
 .hp-css{

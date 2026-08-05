@@ -1,4 +1,18 @@
-﻿.page .top-row.main-navbar {
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url("/images/rayquazagif.gif");
+    background-size: cover; /* Ocupa toda la pantalla */
+    background-position: center; /* Centrado */
+    background-repeat: no-repeat; /* No repetir */
+}
+
+.page .top-row.main-navbar {
     background: #000000;
     background: linear-gradient(180deg, rgba(20, 20, 20, 1) 0%, rgba(40, 40, 40, 1) 48%, rgba(117, 117, 117, 1) 100%);
     display: flex;

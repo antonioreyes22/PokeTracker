@@ -36,6 +36,15 @@ namespace PokeTracker.Services
             {20, "MAGE"}, {21, "MAEG"}, {22, "MEGA"}, {23, "MEAG"}
         };
 
+        private static readonly string[] Natures =
+        {
+            "Hardy", "Lonely", "Brave", "Adamant", "Naughty",
+            "Bold", "Docile", "Relaxed", "Impish", "Lax",
+            "Timid", "Hasty", "Serious", "Jolly", "Naive",
+            "Modest", "Mild", "Quiet", "Bashful", "Rash",
+            "Calm", "Gentle", "Sassy", "Careful", "Quirky"
+        };
+
         private async Task<Stream> OpenSaveAsync()
         {
             return await FileSystem.Current.OpenAppPackageFileAsync(savName);
@@ -198,6 +207,8 @@ namespace PokeTracker.Services
                         name = basePokemon.name,
                         type1 = basePokemon.type1,
                         type2 = basePokemon.type2,
+                        ab1 = basePokemon.ab1,
+                        ab2 = basePokemon.ab2,
 
                         nickname = GetNickname(pokemon[i]),
                         hp = GetHp(pokemon[i]),
@@ -207,8 +218,14 @@ namespace PokeTracker.Services
                         def = GetDefense(pokemon[i]),
                         spDef = GetSpDefense(pokemon[i]),
                         spe = GetSpeed(pokemon[i]),
+                        
+                        Level = GetLevel(pokemon[i]),
 
-                        ImagePath = $"images/pkmn/{basePokemon.numberPokedex}.png"
+                        ImagePath = $"images/pkmn/{basePokemon.numberPokedex}.png",
+
+                        ability = GetAbility(pokemon[i], basePokemon.ab1 ?? "", basePokemon.ab2 ?? ""),
+
+                        nature = GetNature(pokemon[i])
                     };
                     finalList.Add(pkmn);
                 }
@@ -265,6 +282,7 @@ namespace PokeTracker.Services
             return stringBuilder.ToString();
         }
 
+        // -------------------- STATS ------------------------ //
         public ushort GetHp(byte[] pokemon)
         {
             return BitConverter.ToUInt16(pokemon, 0x56);
@@ -298,6 +316,63 @@ namespace PokeTracker.Services
         public ushort GetSpeed(byte[] pokemon) 
         {
             return BitConverter.ToUInt16(pokemon, 0x5E);
+        }
+
+        public byte GetLevel(byte[] pokemon) 
+        {
+            return pokemon[0x54];
+        }
+
+        // ----------------- EV STATS ----------------------- //
+
+        public byte[] GetMiscellaneous(byte[] pokemon)
+        {
+            // Data
+            byte[] pokemonData = DecryptPokemonData(pokemon);
+            uint pid = BitConverter.ToUInt32(pokemon, 0x00);
+            uint order = pid % 24;
+            string orderString = permutations[(int)order];
+
+            // Get letter M from dictionary
+
+            int index = 0;
+            foreach (char c in orderString)
+            {
+                if (c == 'M')
+                    break;
+
+                index++;
+            }
+
+            byte[] miscellaneous = pokemonData
+                .Skip(index * 12)
+                .Take(12)
+                .ToArray();
+
+            return miscellaneous;
+        }
+
+
+        public string GetAbility(byte[] pokemon, string ab1, string ab2) 
+        {
+            byte[] miscellaneous = GetMiscellaneous(pokemon);
+
+            uint value = BitConverter.ToUInt32(miscellaneous, 4);
+
+            int abilityIndex = (int)((value >> 31) & 1);
+
+            if(abilityIndex == 0)
+                return ab1;
+            else
+                return ab2;
+        }
+
+        public string GetNature(byte[] pokemon) 
+        {
+            uint personalityValue = BitConverter.ToUInt32(pokemon, 0x00);
+            int natureIndex = (int)(personalityValue % 25);
+
+            return Natures[natureIndex];
         }
     }
 }

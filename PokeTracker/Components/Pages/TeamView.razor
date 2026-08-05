@@ -8,8 +8,14 @@
     {
         <div class="pokemon-container">
             <div class="img-pkmn-css"><img src="@pokemon.ImagePath" alt="@pokemon.name" /></div>
-            <div class="nickname-css">@pokemon.nickname</div>
-            <div class="name-css">@pokemon.name</div>
+
+            <div class="name-container">
+                <div class="nickname-css">@pokemon.nickname</div>
+                <div class="name-css">/@pokemon.name</div>
+                <div class="lv-css">Lv.@pokemon.Level</div>
+                <div class="lv-css">Lv.@pokemon.ability</div>
+                <div class="lv-css">Lv.@pokemon.nature</div>
+            </div>
 
             <div class="stats-container">
                 <div class="stat">

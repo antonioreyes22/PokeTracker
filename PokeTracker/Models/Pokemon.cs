@@ -19,6 +19,11 @@ namespace PokeTracker.Models
         public ushort def {  get; set; }
         public ushort spDef { get; set; }
         public ushort spe { get; set; }
-        public string ImagePath { get; set; }
+        public string? ImagePath { get; set; }
+        public byte Level { get; set; }
+        public string ability { get; set; }
+        public string? ab1 { get; set; }
+        public string? ab2 { get; set; }
+        public string nature { get; set; }
     }
 }

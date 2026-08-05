@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'PkmnFont';
+    src: url("./fonts/pixel.TTF") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: PkmnFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 a, .btn-link {

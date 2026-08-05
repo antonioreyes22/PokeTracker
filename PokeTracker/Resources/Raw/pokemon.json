@@ -4,2528 +4,3476 @@
     "numberPokedex": 1,
     "name": "Bulbasaur",
     "type1": "Grass",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Overgrow",
+    "ab2": null
   },
   {
     "speciesId": 2,
     "numberPokedex": 2,
     "name": "Ivysaur",
     "type1": "Grass",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Overgrow",
+    "ab2": null
   },
   {
     "speciesId": 3,
     "numberPokedex": 3,
     "name": "Venusaur",
     "type1": "Grass",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Overgrow",
+    "ab2": null
   },
   {
     "speciesId": 4,
     "numberPokedex": 4,
     "name": "Charmander",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Blaze",
+    "ab2": null
   },
   {
     "speciesId": 5,
     "numberPokedex": 5,
     "name": "Charmeleon",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Blaze",
+    "ab2": null
   },
   {
     "speciesId": 6,
     "numberPokedex": 6,
     "name": "Charizard",
     "type1": "Fire",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Blaze",
+    "ab2": null
   },
   {
     "speciesId": 7,
     "numberPokedex": 7,
     "name": "Squirtle",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Torrent",
+    "ab2": null
   },
   {
     "speciesId": 8,
     "numberPokedex": 8,
     "name": "Wartortle",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Torrent",
+    "ab2": null
   },
   {
     "speciesId": 9,
     "numberPokedex": 9,
     "name": "Blastoise",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Torrent",
+    "ab2": null
   },
   {
     "speciesId": 10,
     "numberPokedex": 10,
     "name": "Caterpie",
     "type1": "Bug",
-    "type2": null
+    "type2": null,
+    "ab1": "Shield Dust",
+    "ab2": null
   },
   {
     "speciesId": 11,
     "numberPokedex": 11,
     "name": "Metapod",
     "type1": "Bug",
-    "type2": null
+    "type2": null,
+    "ab1": "Shed Skin",
+    "ab2": null
   },
   {
     "speciesId": 12,
     "numberPokedex": 12,
     "name": "Butterfree",
     "type1": "Bug",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Compound Eyes",
+    "ab2": null
   },
   {
     "speciesId": 13,
     "numberPokedex": 13,
     "name": "Weedle",
     "type1": "Bug",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Shield Dust",
+    "ab2": null
   },
   {
     "speciesId": 14,
     "numberPokedex": 14,
     "name": "Kakuna",
     "type1": "Bug",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Shed Skin",
+    "ab2": null
   },
   {
     "speciesId": 15,
     "numberPokedex": 15,
     "name": "Beedrill",
     "type1": "Bug",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Swarm",
+    "ab2": null
   },
   {
     "speciesId": 16,
     "numberPokedex": 16,
     "name": "Pidgey",
     "type1": "Normal",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Keen Eye",
+    "ab2": "Tangled Feet"
   },
   {
     "speciesId": 17,
     "numberPokedex": 17,
     "name": "Pidgeotto",
     "type1": "Normal",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Keen Eye",
+    "ab2": "Tangled Feet"
   },
   {
     "speciesId": 18,
     "numberPokedex": 18,
     "name": "Pidgeot",
     "type1": "Normal",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Keen Eye",
+    "ab2": "Tangled Feet"
   },
   {
     "speciesId": 19,
     "numberPokedex": 19,
     "name": "Rattata",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Run Away",
+    "ab2": "Guts"
   },
   {
     "speciesId": 20,
     "numberPokedex": 20,
     "name": "Raticate",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Run Away",
+    "ab2": "Guts"
   },
   {
     "speciesId": 21,
     "numberPokedex": 21,
     "name": "Spearow",
     "type1": "Normal",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Keen Eye",
+    "ab2": null
   },
   {
     "speciesId": 22,
     "numberPokedex": 22,
     "name": "Fearow",
     "type1": "Normal",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Keen Eye",
+    "ab2": null
   },
   {
     "speciesId": 23,
     "numberPokedex": 23,
     "name": "Ekans",
     "type1": "Poison",
-    "type2": null
+    "type2": null,
+    "ab1": "Intimidate",
+    "ab2": "Shed Skin"
   },
   {
     "speciesId": 24,
     "numberPokedex": 24,
     "name": "Arbok",
     "type1": "Poison",
-    "type2": null
+    "type2": null,
+    "ab1": "Intimidate",
+    "ab2": "Shed Skin"
   },
   {
     "speciesId": 25,
     "numberPokedex": 25,
     "name": "Pikachu",
     "type1": "Electric",
-    "type2": null
+    "type2": null,
+    "ab1": "Static",
+    "ab2": null
   },
   {
     "speciesId": 26,
     "numberPokedex": 26,
     "name": "Raichu",
     "type1": "Electric",
-    "type2": null
+    "type2": null,
+    "ab1": "Static",
+    "ab2": null
   },
   {
     "speciesId": 27,
     "numberPokedex": 27,
     "name": "Sandshrew",
     "type1": "Ground",
-    "type2": null
+    "type2": null,
+    "ab1": "Sand Veil",
+    "ab2": null
   },
   {
     "speciesId": 28,
     "numberPokedex": 28,
     "name": "Sandslash",
     "type1": "Ground",
-    "type2": null
+    "type2": null,
+    "ab1": "Sand Veil",
+    "ab2": null
   },
   {
     "speciesId": 29,
     "numberPokedex": 29,
     "name": "Nidoran♀",
     "type1": "Poison",
-    "type2": null
+    "type2": null,
+    "ab1": "Poison Point",
+    "ab2": "Rivalry"
   },
   {
     "speciesId": 30,
     "numberPokedex": 30,
     "name": "Nidorina",
     "type1": "Poison",
-    "type2": null
+    "type2": null,
+    "ab1": "Poison Point",
+    "ab2": "Rivalry"
   },
   {
     "speciesId": 31,
     "numberPokedex": 31,
     "name": "Nidoqueen",
     "type1": "Poison",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Poison Point",
+    "ab2": "Rivalry"
   },
   {
     "speciesId": 32,
     "numberPokedex": 32,
     "name": "Nidoran♂",
     "type1": "Poison",
-    "type2": null
+    "type2": null,
+    "ab1": "Poison Point",
+    "ab2": "Rivalry"
   },
   {
     "speciesId": 33,
     "numberPokedex": 33,
     "name": "Nidorino",
     "type1": "Poison",
-    "type2": null
+    "type2": null,
+    "ab1": "Poison Point",
+    "ab2": "Rivalry"
   },
   {
     "speciesId": 34,
     "numberPokedex": 34,
     "name": "Nidoking",
     "type1": "Poison",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Poison Point",
+    "ab2": "Rivalry"
   },
   {
     "speciesId": 35,
     "numberPokedex": 35,
     "name": "Clefairy",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Cute Charm",
+    "ab2": "Magic Guard"
   },
   {
     "speciesId": 36,
     "numberPokedex": 36,
     "name": "Clefable",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Cute Charm",
+    "ab2": "Magic Guard"
   },
   {
     "speciesId": 37,
     "numberPokedex": 37,
     "name": "Vulpix",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Flash Fire",
+    "ab2": null
   },
   {
     "speciesId": 38,
     "numberPokedex": 38,
     "name": "Ninetales",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Flash Fire",
+    "ab2": null
   },
   {
     "speciesId": 39,
     "numberPokedex": 39,
     "name": "Jigglypuff",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Cute Charm",
+    "ab2": "Competitive"
   },
   {
     "speciesId": 40,
     "numberPokedex": 40,
     "name": "Wigglytuff",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Cute Charm",
+    "ab2": "Competitive"
   },
   {
     "speciesId": 41,
     "numberPokedex": 41,
     "name": "Zubat",
     "type1": "Poison",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Inner Focus",
+    "ab2": null
   },
   {
     "speciesId": 42,
     "numberPokedex": 42,
     "name": "Golbat",
     "type1": "Poison",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Inner Focus",
+    "ab2": null
   },
   {
     "speciesId": 43,
     "numberPokedex": 43,
     "name": "Oddish",
     "type1": "Grass",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Chlorophyll",
+    "ab2": null
   },
   {
     "speciesId": 44,
     "numberPokedex": 44,
     "name": "Gloom",
     "type1": "Grass",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Chlorophyll",
+    "ab2": null
   },
   {
     "speciesId": 45,
     "numberPokedex": 45,
     "name": "Vileplume",
     "type1": "Grass",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Chlorophyll",
+    "ab2": null
   },
   {
     "speciesId": 46,
     "numberPokedex": 46,
     "name": "Paras",
     "type1": "Bug",
-    "type2": "Grass"
+    "type2": "Grass",
+    "ab1": "Effect Spore",
+    "ab2": "Dry Skin"
   },
   {
     "speciesId": 47,
     "numberPokedex": 47,
     "name": "Parasect",
     "type1": "Bug",
-    "type2": "Grass"
+    "type2": "Grass",
+    "ab1": "Effect Spore",
+    "ab2": "Dry Skin"
   },
   {
     "speciesId": 48,
     "numberPokedex": 48,
     "name": "Venonat",
     "type1": "Bug",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Compound Eyes",
+    "ab2": "Tinted Lens"
   },
   {
     "speciesId": 49,
     "numberPokedex": 49,
     "name": "Venomoth",
     "type1": "Bug",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Shield Dust",
+    "ab2": "Tinted Lens"
   },
   {
     "speciesId": 50,
     "numberPokedex": 50,
     "name": "Diglett",
     "type1": "Ground",
-    "type2": null
+    "type2": null,
+    "ab1": "Sand Veil",
+    "ab2": "Arena Trap"
   },
   {
     "speciesId": 51,
     "numberPokedex": 51,
     "name": "Dugtrio",
     "type1": "Ground",
-    "type2": null
+    "type2": null,
+    "ab1": "Sand Veil",
+    "ab2": "Arena Trap"
   },
   {
     "speciesId": 52,
     "numberPokedex": 52,
     "name": "Meowth",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Pickup",
+    "ab2": "Technician"
   },
   {
     "speciesId": 53,
     "numberPokedex": 53,
     "name": "Persian",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Limber",
+    "ab2": "Technician"
   },
   {
     "speciesId": 54,
     "numberPokedex": 54,
     "name": "Psyduck",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Damp",
+    "ab2": "Cloud Nine"
   },
   {
     "speciesId": 55,
     "numberPokedex": 55,
     "name": "Golduck",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Damp",
+    "ab2": "Cloud Nine"
   },
   {
     "speciesId": 56,
     "numberPokedex": 56,
     "name": "Mankey",
     "type1": "Fighting",
-    "type2": null
+    "type2": null,
+    "ab1": "Vital Spirit",
+    "ab2": "Anger Point"
   },
   {
     "speciesId": 57,
     "numberPokedex": 57,
     "name": "Primeape",
     "type1": "Fighting",
-    "type2": null
+    "type2": null,
+    "ab1": "Vital Spirit",
+    "ab2": "Anger Point"
   },
   {
     "speciesId": 58,
     "numberPokedex": 58,
     "name": "Growlithe",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Intimidate",
+    "ab2": "Flash Fire"
   },
   {
     "speciesId": 59,
     "numberPokedex": 59,
     "name": "Arcanine",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Intimidate",
+    "ab2": "Flash Fire"
   },
   {
     "speciesId": 60,
     "numberPokedex": 60,
     "name": "Poliwag",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Water Absorb",
+    "ab2": "Damp"
   },
   {
     "speciesId": 61,
     "numberPokedex": 61,
     "name": "Poliwhirl",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Water Absorb",
+    "ab2": "Damp"
   },
   {
     "speciesId": 62,
     "numberPokedex": 62,
     "name": "Poliwrath",
     "type1": "Water",
-    "type2": "Fighting"
+    "type2": "Fighting",
+    "ab1": "Water Absorb",
+    "ab2": "Damp"
   },
   {
     "speciesId": 63,
     "numberPokedex": 63,
     "name": "Abra",
     "type1": "Psychic",
-    "type2": null
+    "type2": null,
+    "ab1": "Synchronize",
+    "ab2": "Inner Focus"
   },
   {
     "speciesId": 64,
     "numberPokedex": 64,
     "name": "Kadabra",
     "type1": "Psychic",
-    "type2": null
+    "type2": null,
+    "ab1": "Synchronize",
+    "ab2": "Inner Focus"
   },
   {
     "speciesId": 65,
     "numberPokedex": 65,
     "name": "Alakazam",
     "type1": "Psychic",
-    "type2": null
+    "type2": null,
+    "ab1": "Synchronize",
+    "ab2": "Inner Focus"
   },
   {
     "speciesId": 66,
     "numberPokedex": 66,
     "name": "Machop",
     "type1": "Fighting",
-    "type2": null
+    "type2": null,
+    "ab1": "Guts",
+    "ab2": "No Guard"
   },
   {
     "speciesId": 67,
     "numberPokedex": 67,
     "name": "Machoke",
     "type1": "Fighting",
-    "type2": null
+    "type2": null,
+    "ab1": "Guts",
+    "ab2": "No Guard"
   },
   {
     "speciesId": 68,
     "numberPokedex": 68,
     "name": "Machamp",
     "type1": "Fighting",
-    "type2": null
+    "type2": null,
+    "ab1": "Guts",
+    "ab2": "No Guard"
   },
   {
     "speciesId": 69,
     "numberPokedex": 69,
     "name": "Bellsprout",
     "type1": "Grass",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Chlorophyll",
+    "ab2": null
   },
   {
     "speciesId": 70,
     "numberPokedex": 70,
     "name": "Weepinbell",
     "type1": "Grass",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Chlorophyll",
+    "ab2": null
   },
   {
     "speciesId": 71,
     "numberPokedex": 71,
     "name": "Victreebel",
     "type1": "Grass",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Chlorophyll",
+    "ab2": null
   },
   {
     "speciesId": 72,
     "numberPokedex": 72,
     "name": "Tentacool",
     "type1": "Water",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Clear Body",
+    "ab2": "Liquid Ooze"
   },
   {
     "speciesId": 73,
     "numberPokedex": 73,
     "name": "Tentacruel",
     "type1": "Water",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Clear Body",
+    "ab2": "Liquid Ooze"
   },
   {
     "speciesId": 74,
     "numberPokedex": 74,
     "name": "Geodude",
     "type1": "Rock",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Rock Head",
+    "ab2": "Sturdy"
   },
   {
     "speciesId": 75,
     "numberPokedex": 75,
     "name": "Graveler",
     "type1": "Rock",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Rock Head",
+    "ab2": "Sturdy"
   },
   {
     "speciesId": 76,
     "numberPokedex": 76,
     "name": "Golem",
     "type1": "Rock",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Rock Head",
+    "ab2": "Sturdy"
   },
   {
     "speciesId": 77,
     "numberPokedex": 77,
     "name": "Ponyta",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Run Away",
+    "ab2": "Flash Fire"
   },
   {
     "speciesId": 78,
     "numberPokedex": 78,
     "name": "Rapidash",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Run Away",
+    "ab2": "Flash Fire"
   },
   {
     "speciesId": 79,
     "numberPokedex": 79,
     "name": "Slowpoke",
     "type1": "Water",
-    "type2": "Psychic"
+    "type2": "Psychic",
+    "ab1": "Oblivious",
+    "ab2": "Own Tempo"
   },
   {
     "speciesId": 80,
     "numberPokedex": 80,
     "name": "Slowbro",
     "type1": "Water",
-    "type2": "Psychic"
+    "type2": "Psychic",
+    "ab1": "Oblivious",
+    "ab2": "Own Tempo"
   },
   {
     "speciesId": 81,
     "numberPokedex": 81,
     "name": "Magnemite",
     "type1": "Electric",
-    "type2": "Steel"
+    "type2": "Steel",
+    "ab1": "Magnet Pull",
+    "ab2": "Sturdy"
   },
   {
     "speciesId": 82,
     "numberPokedex": 82,
     "name": "Magneton",
     "type1": "Electric",
-    "type2": "Steel"
+    "type2": "Steel",
+    "ab1": "Magnet Pull",
+    "ab2": "Sturdy"
   },
   {
     "speciesId": 83,
     "numberPokedex": 83,
     "name": "Farfetch'd",
     "type1": "Normal",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Keen Eye",
+    "ab2": "Inner Focus"
   },
   {
     "speciesId": 84,
     "numberPokedex": 84,
     "name": "Doduo",
     "type1": "Normal",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Run Away",
+    "ab2": "Early Bird"
   },
   {
     "speciesId": 85,
     "numberPokedex": 85,
     "name": "Dodrio",
     "type1": "Normal",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Run Away",
+    "ab2": "Early Bird"
   },
   {
     "speciesId": 86,
     "numberPokedex": 86,
     "name": "Seel",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Thick Fat",
+    "ab2": "Hydration"
   },
   {
     "speciesId": 87,
     "numberPokedex": 87,
     "name": "Dewgong",
     "type1": "Water",
-    "type2": "Ice"
+    "type2": "Ice",
+    "ab1": "Thick Fat",
+    "ab2": "Hydration"
   },
   {
     "speciesId": 88,
     "numberPokedex": 88,
     "name": "Grimer",
     "type1": "Poison",
-    "type2": null
+    "type2": null,
+    "ab1": "Stench",
+    "ab2": "Sticky Hold"
   },
   {
     "speciesId": 89,
     "numberPokedex": 89,
     "name": "Muk",
     "type1": "Poison",
-    "type2": null
+    "type2": null,
+    "ab1": "Stench",
+    "ab2": "Sticky Hold"
   },
   {
     "speciesId": 90,
     "numberPokedex": 90,
     "name": "Shellder",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Shell Armor",
+    "ab2": "Skill Link"
   },
   {
     "speciesId": 91,
     "numberPokedex": 91,
     "name": "Cloyster",
     "type1": "Water",
-    "type2": "Ice"
+    "type2": "Ice",
+    "ab1": "Shell Armor",
+    "ab2": "Skill Link"
   },
   {
     "speciesId": 92,
     "numberPokedex": 92,
     "name": "Gastly",
     "type1": "Ghost",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Levitate",
+    "ab2": null
   },
   {
     "speciesId": 93,
     "numberPokedex": 93,
     "name": "Haunter",
     "type1": "Ghost",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Levitate",
+    "ab2": null
   },
   {
     "speciesId": 94,
     "numberPokedex": 94,
     "name": "Gengar",
     "type1": "Ghost",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Cursed Body",
+    "ab2": null
   },
   {
     "speciesId": 95,
     "numberPokedex": 95,
     "name": "Onix",
     "type1": "Rock",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Rock Head",
+    "ab2": "Sturdy"
   },
   {
     "speciesId": 96,
     "numberPokedex": 96,
     "name": "Drowzee",
     "type1": "Psychic",
-    "type2": null
+    "type2": null,
+    "ab1": "Insomnia",
+    "ab2": "Forewarn"
   },
   {
     "speciesId": 97,
     "numberPokedex": 97,
     "name": "Hypno",
     "type1": "Psychic",
-    "type2": null
+    "type2": null,
+    "ab1": "Insomnia",
+    "ab2": "Forewarn"
   },
   {
     "speciesId": 98,
     "numberPokedex": 98,
     "name": "Krabby",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Hyper Cutter",
+    "ab2": "Shell Armor"
   },
   {
     "speciesId": 99,
     "numberPokedex": 99,
     "name": "Kingler",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Hyper Cutter",
+    "ab2": "Shell Armor"
   },
   {
     "speciesId": 100,
     "numberPokedex": 100,
     "name": "Voltorb",
     "type1": "Electric",
-    "type2": null
+    "type2": null,
+    "ab1": "Soundproof",
+    "ab2": "Static"
   },
   {
     "speciesId": 101,
     "numberPokedex": 101,
     "name": "Electrode",
     "type1": "Electric",
-    "type2": null
+    "type2": null,
+    "ab1": "Soundproof",
+    "ab2": "Static"
   },
   {
     "speciesId": 102,
     "numberPokedex": 102,
     "name": "Exeggcute",
     "type1": "Grass",
-    "type2": "Psychic"
+    "type2": "Psychic",
+    "ab1": "Chlorophyll",
+    "ab2": null
   },
   {
     "speciesId": 103,
     "numberPokedex": 103,
     "name": "Exeggutor",
     "type1": "Grass",
-    "type2": "Psychic"
+    "type2": "Psychic",
+    "ab1": "Chlorophyll",
+    "ab2": null
   },
   {
     "speciesId": 104,
     "numberPokedex": 104,
     "name": "Cubone",
     "type1": "Ground",
-    "type2": null
+    "type2": null,
+    "ab1": "Rock Head",
+    "ab2": "Lightning Rod"
   },
   {
     "speciesId": 105,
     "numberPokedex": 105,
     "name": "Marowak",
     "type1": "Ground",
-    "type2": null
+    "type2": null,
+    "ab1": "Rock Head",
+    "ab2": "Lightning Rod"
   },
   {
     "speciesId": 106,
     "numberPokedex": 106,
     "name": "Hitmonlee",
     "type1": "Fighting",
-    "type2": null
+    "type2": null,
+    "ab1": "Limber",
+    "ab2": "Reckless"
   },
   {
     "speciesId": 107,
     "numberPokedex": 107,
     "name": "Hitmonchan",
     "type1": "Fighting",
-    "type2": null
+    "type2": null,
+    "ab1": "Keen Eye",
+    "ab2": "Iron Fist"
   },
   {
     "speciesId": 108,
     "numberPokedex": 108,
     "name": "Lickitung",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Own Tempo",
+    "ab2": "Oblivious"
   },
   {
     "speciesId": 109,
     "numberPokedex": 109,
     "name": "Koffing",
     "type1": "Poison",
-    "type2": null
+    "type2": null,
+    "ab1": "Levitate",
+    "ab2": null
   },
   {
     "speciesId": 110,
     "numberPokedex": 110,
     "name": "Weezing",
     "type1": "Poison",
-    "type2": null
+    "type2": null,
+    "ab1": "Levitate",
+    "ab2": null
   },
   {
     "speciesId": 111,
     "numberPokedex": 111,
     "name": "Rhyhorn",
     "type1": "Ground",
-    "type2": "Rock"
+    "type2": "Rock",
+    "ab1": "Lightning Rod",
+    "ab2": "Rock Head"
   },
   {
     "speciesId": 112,
     "numberPokedex": 112,
     "name": "Rhydon",
     "type1": "Ground",
-    "type2": "Rock"
+    "type2": "Rock",
+    "ab1": "Lightning Rod",
+    "ab2": "Rock Head"
   },
   {
     "speciesId": 113,
     "numberPokedex": 113,
     "name": "Chansey",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Natural Cure",
+    "ab2": "Serene Grace"
   },
   {
     "speciesId": 114,
     "numberPokedex": 114,
     "name": "Tangela",
     "type1": "Grass",
-    "type2": null
+    "type2": null,
+    "ab1": "Chlorophyll",
+    "ab2": "Leaf Guard"
   },
   {
     "speciesId": 115,
     "numberPokedex": 115,
     "name": "Kangaskhan",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Early Bird",
+    "ab2": "Scrappy"
   },
   {
     "speciesId": 116,
     "numberPokedex": 116,
     "name": "Horsea",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Swift Swim",
+    "ab2": "Sniper"
   },
   {
     "speciesId": 117,
     "numberPokedex": 117,
     "name": "Seadra",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Poison Point",
+    "ab2": "Sniper"
   },
   {
     "speciesId": 118,
     "numberPokedex": 118,
     "name": "Goldeen",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Swift Swim",
+    "ab2": "Water Veil"
   },
   {
     "speciesId": 119,
     "numberPokedex": 119,
     "name": "Seaking",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Swift Swim",
+    "ab2": "Water Veil"
   },
   {
     "speciesId": 120,
     "numberPokedex": 120,
     "name": "Staryu",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Illuminate",
+    "ab2": "Natural Cure"
   },
   {
     "speciesId": 121,
     "numberPokedex": 121,
     "name": "Starmie",
     "type1": "Water",
-    "type2": "Psychic"
+    "type2": "Psychic",
+    "ab1": "Illuminate",
+    "ab2": "Natural Cure"
   },
   {
     "speciesId": 122,
     "numberPokedex": 122,
     "name": "Mr. Mime",
     "type1": "Psychic",
-    "type2": "Fairy"
+    "type2": "Fairy",
+    "ab1": "Soundproof",
+    "ab2": "Filter"
   },
   {
     "speciesId": 123,
     "numberPokedex": 123,
     "name": "Scyther",
     "type1": "Bug",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Swarm",
+    "ab2": "Technician"
   },
   {
     "speciesId": 124,
     "numberPokedex": 124,
     "name": "Jynx",
     "type1": "Ice",
-    "type2": "Psychic"
+    "type2": "Psychic",
+    "ab1": "Oblivious",
+    "ab2": "Forewarn"
   },
   {
     "speciesId": 125,
     "numberPokedex": 125,
     "name": "Electabuzz",
     "type1": "Electric",
-    "type2": null
+    "type2": null,
+    "ab1": "Static",
+    "ab2": null
   },
   {
     "speciesId": 126,
     "numberPokedex": 126,
     "name": "Magmar",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Flame Body",
+    "ab2": null
   },
   {
     "speciesId": 127,
     "numberPokedex": 127,
     "name": "Pinsir",
     "type1": "Bug",
-    "type2": null
+    "type2": null,
+    "ab1": "Hyper Cutter",
+    "ab2": "Mold Breaker"
   },
   {
     "speciesId": 128,
     "numberPokedex": 128,
     "name": "Tauros",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Intimidate",
+    "ab2": "Anger Point"
   },
   {
     "speciesId": 129,
     "numberPokedex": 129,
     "name": "Magikarp",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Swift Swim",
+    "ab2": null
   },
   {
     "speciesId": 130,
     "numberPokedex": 130,
     "name": "Gyarados",
     "type1": "Water",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Intimidate",
+    "ab2": null
   },
   {
     "speciesId": 131,
     "numberPokedex": 131,
     "name": "Lapras",
     "type1": "Water",
-    "type2": "Ice"
+    "type2": "Ice",
+    "ab1": "Water Absorb",
+    "ab2": "Shell Armor"
   },
   {
     "speciesId": 132,
     "numberPokedex": 132,
     "name": "Ditto",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Limber",
+    "ab2": null
   },
   {
     "speciesId": 133,
     "numberPokedex": 133,
     "name": "Eevee",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Run Away",
+    "ab2": "Adaptability"
   },
   {
     "speciesId": 134,
     "numberPokedex": 134,
     "name": "Vaporeon",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Water Absorb",
+    "ab2": null
   },
   {
     "speciesId": 135,
     "numberPokedex": 135,
     "name": "Jolteon",
     "type1": "Electric",
-    "type2": null
+    "type2": null,
+    "ab1": "Volt Absorb",
+    "ab2": null
   },
   {
     "speciesId": 136,
     "numberPokedex": 136,
     "name": "Flareon",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Flash Fire",
+    "ab2": null
   },
   {
     "speciesId": 137,
     "numberPokedex": 137,
     "name": "Porygon",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Trace",
+    "ab2": "Download"
   },
   {
     "speciesId": 138,
     "numberPokedex": 138,
     "name": "Omanyte",
     "type1": "Rock",
-    "type2": "Water"
+    "type2": "Water",
+    "ab1": "Swift Swim",
+    "ab2": "Shell Armor"
   },
   {
     "speciesId": 139,
     "numberPokedex": 139,
     "name": "Omastar",
     "type1": "Rock",
-    "type2": "Water"
+    "type2": "Water",
+    "ab1": "Swift Swim",
+    "ab2": "Shell Armor"
   },
   {
     "speciesId": 140,
     "numberPokedex": 140,
     "name": "Kabuto",
     "type1": "Rock",
-    "type2": "Water"
+    "type2": "Water",
+    "ab1": "Swift Swim",
+    "ab2": "Battle Armor"
   },
   {
     "speciesId": 141,
     "numberPokedex": 141,
     "name": "Kabutops",
     "type1": "Rock",
-    "type2": "Water"
+    "type2": "Water",
+    "ab1": "Swift Swim",
+    "ab2": "Battle Armor"
   },
   {
     "speciesId": 142,
     "numberPokedex": 142,
     "name": "Aerodactyl",
     "type1": "Rock",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Rock Head",
+    "ab2": "Pressure"
   },
   {
     "speciesId": 143,
     "numberPokedex": 143,
     "name": "Snorlax",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Immunity",
+    "ab2": "Thick Fat"
   },
   {
     "speciesId": 144,
     "numberPokedex": 144,
     "name": "Articuno",
     "type1": "Ice",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Pressure",
+    "ab2": null
   },
   {
     "speciesId": 145,
     "numberPokedex": 145,
     "name": "Zapdos",
     "type1": "Electric",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Pressure",
+    "ab2": null
   },
   {
     "speciesId": 146,
     "numberPokedex": 146,
     "name": "Moltres",
     "type1": "Fire",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Pressure",
+    "ab2": null
   },
   {
     "speciesId": 147,
     "numberPokedex": 147,
     "name": "Dratini",
     "type1": "Dragon",
-    "type2": null
+    "type2": null,
+    "ab1": "Shed Skin",
+    "ab2": null
   },
   {
     "speciesId": 148,
     "numberPokedex": 148,
     "name": "Dragonair",
     "type1": "Dragon",
-    "type2": null
+    "type2": null,
+    "ab1": "Shed Skin",
+    "ab2": null
   },
   {
     "speciesId": 149,
     "numberPokedex": 149,
     "name": "Dragonite",
     "type1": "Dragon",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Inner Focus",
+    "ab2": null
   },
   {
     "speciesId": 150,
     "numberPokedex": 150,
     "name": "Mewtwo",
     "type1": "Psychic",
-    "type2": null
+    "type2": null,
+    "ab1": "Pressure",
+    "ab2": null
   },
   {
     "speciesId": 151,
     "numberPokedex": 151,
     "name": "Mew",
     "type1": "Psychic",
-    "type2": null
+    "type2": null,
+    "ab1": "Synchronize",
+    "ab2": null
   },
   {
     "speciesId": 152,
     "numberPokedex": 152,
     "name": "Chikorita",
     "type1": "Grass",
-    "type2": null
+    "type2": null,
+    "ab1": "Overgrow",
+    "ab2": null
   },
   {
     "speciesId": 153,
     "numberPokedex": 153,
     "name": "Bayleef",
     "type1": "Grass",
-    "type2": null
+    "type2": null,
+    "ab1": "Overgrow",
+    "ab2": null
   },
   {
     "speciesId": 154,
     "numberPokedex": 154,
     "name": "Meganium",
     "type1": "Grass",
-    "type2": null
+    "type2": null,
+    "ab1": "Overgrow",
+    "ab2": null
   },
   {
     "speciesId": 155,
     "numberPokedex": 155,
     "name": "Cyndaquil",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Blaze",
+    "ab2": null
   },
   {
     "speciesId": 156,
     "numberPokedex": 156,
     "name": "Quilava",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Blaze",
+    "ab2": null
   },
   {
     "speciesId": 157,
     "numberPokedex": 157,
     "name": "Typhlosion",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Blaze",
+    "ab2": null
   },
   {
     "speciesId": 158,
     "numberPokedex": 158,
     "name": "Totodile",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Torrent",
+    "ab2": null
   },
   {
     "speciesId": 159,
     "numberPokedex": 159,
     "name": "Croconaw",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Torrent",
+    "ab2": null
   },
   {
     "speciesId": 160,
     "numberPokedex": 160,
     "name": "Feraligatr",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Torrent",
+    "ab2": null
   },
   {
     "speciesId": 161,
     "numberPokedex": 161,
     "name": "Sentret",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Run Away",
+    "ab2": "Keen Eye"
   },
   {
     "speciesId": 162,
     "numberPokedex": 162,
     "name": "Furret",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Run Away",
+    "ab2": "Keen Eye"
   },
   {
     "speciesId": 163,
     "numberPokedex": 163,
     "name": "Hoothoot",
     "type1": "Normal",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Insomnia",
+    "ab2": "Keen Eye"
   },
   {
     "speciesId": 164,
     "numberPokedex": 164,
     "name": "Noctowl",
     "type1": "Normal",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Insomnia",
+    "ab2": "Keen Eye"
   },
   {
     "speciesId": 165,
     "numberPokedex": 165,
     "name": "Ledyba",
     "type1": "Bug",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Swarm",
+    "ab2": "Early Bird"
   },
   {
     "speciesId": 166,
     "numberPokedex": 166,
     "name": "Ledian",
     "type1": "Bug",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Swarm",
+    "ab2": "Early Bird"
   },
   {
     "speciesId": 167,
     "numberPokedex": 167,
     "name": "Spinarak",
     "type1": "Bug",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Swarm",
+    "ab2": "Insomnia"
   },
   {
     "speciesId": 168,
     "numberPokedex": 168,
     "name": "Ariados",
     "type1": "Bug",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Swarm",
+    "ab2": "Insomnia"
   },
   {
     "speciesId": 169,
     "numberPokedex": 169,
     "name": "Crobat",
     "type1": "Poison",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Inner Focus",
+    "ab2": null
   },
   {
     "speciesId": 170,
     "numberPokedex": 170,
     "name": "Chinchou",
     "type1": "Water",
-    "type2": "Electric"
+    "type2": "Electric",
+    "ab1": "Volt Absorb",
+    "ab2": "Illuminate"
   },
   {
     "speciesId": 171,
     "numberPokedex": 171,
     "name": "Lanturn",
     "type1": "Water",
-    "type2": "Electric"
+    "type2": "Electric",
+    "ab1": "Volt Absorb",
+    "ab2": "Illuminate"
   },
   {
     "speciesId": 172,
     "numberPokedex": 172,
     "name": "Pichu",
     "type1": "Electric",
-    "type2": null
+    "type2": null,
+    "ab1": "Static",
+    "ab2": null
   },
   {
     "speciesId": 173,
     "numberPokedex": 173,
     "name": "Cleffa",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Cute Charm",
+    "ab2": "Magic Guard"
   },
   {
     "speciesId": 174,
     "numberPokedex": 174,
     "name": "Igglybuff",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Cute Charm",
+    "ab2": "Competitive"
   },
   {
     "speciesId": 175,
     "numberPokedex": 175,
     "name": "Togepi",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Hustle",
+    "ab2": "Serene Grace"
   },
   {
     "speciesId": 176,
     "numberPokedex": 176,
     "name": "Togetic",
     "type1": "Normal",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Hustle",
+    "ab2": "Serene Grace"
   },
   {
     "speciesId": 177,
     "numberPokedex": 177,
     "name": "Natu",
     "type1": "Psychic",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Synchronize",
+    "ab2": "Early Bird"
   },
   {
     "speciesId": 178,
     "numberPokedex": 178,
     "name": "Xatu",
     "type1": "Psychic",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Synchronize",
+    "ab2": "Early Bird"
   },
   {
     "speciesId": 179,
     "numberPokedex": 179,
     "name": "Mareep",
     "type1": "Electric",
-    "type2": null
+    "type2": null,
+    "ab1": "Static",
+    "ab2": null
   },
   {
     "speciesId": 180,
     "numberPokedex": 180,
     "name": "Flaaffy",
     "type1": "Electric",
-    "type2": null
+    "type2": null,
+    "ab1": "Static",
+    "ab2": null
   },
   {
     "speciesId": 181,
     "numberPokedex": 181,
     "name": "Ampharos",
     "type1": "Electric",
-    "type2": null
+    "type2": null,
+    "ab1": "Static",
+    "ab2": null
   },
   {
     "speciesId": 182,
     "numberPokedex": 182,
     "name": "Bellossom",
     "type1": "Grass",
-    "type2": null
+    "type2": null,
+    "ab1": "Chlorophyll",
+    "ab2": null
   },
   {
     "speciesId": 183,
     "numberPokedex": 183,
     "name": "Marill",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Thick Fat",
+    "ab2": "Huge Power"
   },
   {
     "speciesId": 184,
     "numberPokedex": 184,
     "name": "Azumarill",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Thick Fat",
+    "ab2": "Huge Power"
   },
   {
     "speciesId": 185,
     "numberPokedex": 185,
     "name": "Sudowoodo",
     "type1": "Rock",
-    "type2": null
+    "type2": null,
+    "ab1": "Sturdy",
+    "ab2": "Rock Head"
   },
   {
     "speciesId": 186,
     "numberPokedex": 186,
     "name": "Politoed",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Water Absorb",
+    "ab2": "Damp"
   },
   {
     "speciesId": 187,
     "numberPokedex": 187,
     "name": "Hoppip",
     "type1": "Grass",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Chlorophyll",
+    "ab2": "Leaf Guard"
   },
   {
     "speciesId": 188,
     "numberPokedex": 188,
     "name": "Skiploom",
     "type1": "Grass",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Chlorophyll",
+    "ab2": "Leaf Guard"
   },
   {
     "speciesId": 189,
     "numberPokedex": 189,
     "name": "Jumpluff",
     "type1": "Grass",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Chlorophyll",
+    "ab2": "Leaf Guard"
   },
   {
     "speciesId": 190,
     "numberPokedex": 190,
     "name": "Aipom",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Run Away",
+    "ab2": "Pickup"
   },
   {
     "speciesId": 191,
     "numberPokedex": 191,
     "name": "Sunkern",
     "type1": "Grass",
-    "type2": null
+    "type2": null,
+    "ab1": "Chlorophyll",
+    "ab2": "Solar Power"
   },
   {
     "speciesId": 192,
     "numberPokedex": 192,
     "name": "Sunflora",
     "type1": "Grass",
-    "type2": null
+    "type2": null,
+    "ab1": "Chlorophyll",
+    "ab2": "Solar Power"
   },
   {
     "speciesId": 193,
     "numberPokedex": 193,
     "name": "Yanma",
     "type1": "Bug",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Speed Boost",
+    "ab2": "Compound Eyes"
   },
   {
     "speciesId": 194,
     "numberPokedex": 194,
     "name": "Wooper",
     "type1": "Water",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Damp",
+    "ab2": "Water Absorb"
   },
   {
     "speciesId": 195,
     "numberPokedex": 195,
     "name": "Quagsire",
     "type1": "Water",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Damp",
+    "ab2": "Water Absorb"
   },
   {
     "speciesId": 196,
     "numberPokedex": 196,
     "name": "Espeon",
     "type1": "Psychic",
-    "type2": null
+    "type2": null,
+    "ab1": "Synchronize",
+    "ab2": null
   },
   {
     "speciesId": 197,
     "numberPokedex": 197,
     "name": "Umbreon",
     "type1": "Dark",
-    "type2": null
+    "type2": null,
+    "ab1": "Synchronize",
+    "ab2": null
   },
   {
     "speciesId": 198,
     "numberPokedex": 198,
     "name": "Murkrow",
     "type1": "Dark",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Insomnia",
+    "ab2": "Super Luck"
   },
   {
     "speciesId": 199,
     "numberPokedex": 199,
     "name": "Slowking",
     "type1": "Water",
-    "type2": "Psychic"
+    "type2": "Psychic",
+    "ab1": "Oblivious",
+    "ab2": "Own Tempo"
   },
   {
     "speciesId": 200,
     "numberPokedex": 200,
     "name": "Misdreavus",
     "type1": "Ghost",
-    "type2": null
+    "type2": null,
+    "ab1": "Levitate",
+    "ab2": null
   },
   {
     "speciesId": 201,
     "numberPokedex": 201,
     "name": "Unown",
     "type1": "Psychic",
-    "type2": null
+    "type2": null,
+    "ab1": "Levitate",
+    "ab2": null
   },
   {
     "speciesId": 202,
     "numberPokedex": 202,
     "name": "Wobbuffet",
     "type1": "Psychic",
-    "type2": null
+    "type2": null,
+    "ab1": "Shadow Tag",
+    "ab2": null
   },
   {
     "speciesId": 203,
     "numberPokedex": 203,
     "name": "Girafarig",
     "type1": "Normal",
-    "type2": "Psychic"
+    "type2": "Psychic",
+    "ab1": "Inner Focus",
+    "ab2": "Early Bird"
   },
   {
     "speciesId": 204,
     "numberPokedex": 204,
     "name": "Pineco",
     "type1": "Bug",
-    "type2": null
+    "type2": null,
+    "ab1": "Sturdy",
+    "ab2": null
   },
   {
     "speciesId": 205,
     "numberPokedex": 205,
     "name": "Forretress",
     "type1": "Bug",
-    "type2": "Steel"
+    "type2": "Steel",
+    "ab1": "Sturdy",
+    "ab2": null
   },
   {
     "speciesId": 206,
     "numberPokedex": 206,
     "name": "Dunsparce",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Serene Grace",
+    "ab2": "Run Away"
   },
   {
     "speciesId": 207,
     "numberPokedex": 207,
     "name": "Gligar",
     "type1": "Ground",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Hyper Cutter",
+    "ab2": "Sand Veil"
   },
   {
     "speciesId": 208,
     "numberPokedex": 208,
     "name": "Steelix",
     "type1": "Steel",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Rock Head",
+    "ab2": "Sturdy"
   },
   {
     "speciesId": 209,
     "numberPokedex": 209,
     "name": "Snubbull",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Intimidate",
+    "ab2": "Run Away"
   },
   {
     "speciesId": 210,
     "numberPokedex": 210,
     "name": "Granbull",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Intimidate",
+    "ab2": "Quick Feet"
   },
   {
     "speciesId": 211,
     "numberPokedex": 211,
     "name": "Qwilfish",
     "type1": "Water",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Poison Point",
+    "ab2": "Swift Swim"
   },
   {
     "speciesId": 212,
     "numberPokedex": 212,
     "name": "Scizor",
     "type1": "Bug",
-    "type2": "Steel"
+    "type2": "Steel",
+    "ab1": "Swarm",
+    "ab2": "Technician"
   },
   {
     "speciesId": 213,
     "numberPokedex": 213,
     "name": "Shuckle",
     "type1": "Bug",
-    "type2": "Rock"
+    "type2": "Rock",
+    "ab1": "Sturdy",
+    "ab2": "Gluttony"
   },
   {
     "speciesId": 214,
     "numberPokedex": 214,
     "name": "Heracross",
     "type1": "Bug",
-    "type2": "Fighting"
+    "type2": "Fighting",
+    "ab1": "Swarm",
+    "ab2": "Guts"
   },
   {
     "speciesId": 215,
     "numberPokedex": 215,
     "name": "Sneasel",
     "type1": "Dark",
-    "type2": "Ice"
+    "type2": "Ice",
+    "ab1": "Inner Focus",
+    "ab2": "Keen Eye"
   },
   {
     "speciesId": 216,
     "numberPokedex": 216,
     "name": "Teddiursa",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Pickup",
+    "ab2": "Quick Feet"
   },
   {
     "speciesId": 217,
     "numberPokedex": 217,
     "name": "Ursaring",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Guts",
+    "ab2": "Quick Feet"
   },
   {
     "speciesId": 218,
     "numberPokedex": 218,
     "name": "Slugma",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Magma Armor",
+    "ab2": "Flame Body"
   },
   {
     "speciesId": 219,
     "numberPokedex": 219,
     "name": "Magcargo",
     "type1": "Fire",
-    "type2": "Rock"
+    "type2": "Rock",
+    "ab1": "Magma Armor",
+    "ab2": "Flame Body"
   },
   {
     "speciesId": 220,
     "numberPokedex": 220,
     "name": "Swinub",
     "type1": "Ice",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Oblivious",
+    "ab2": "Snow Cloak"
   },
   {
     "speciesId": 221,
     "numberPokedex": 221,
     "name": "Piloswine",
     "type1": "Ice",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Oblivious",
+    "ab2": "Snow Cloak"
   },
   {
     "speciesId": 222,
     "numberPokedex": 222,
     "name": "Corsola",
     "type1": "Water",
-    "type2": "Rock"
+    "type2": "Rock",
+    "ab1": "Hustle",
+    "ab2": "Natural Cure"
   },
   {
     "speciesId": 223,
     "numberPokedex": 223,
     "name": "Remoraid",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Hustle",
+    "ab2": "Sniper"
   },
   {
     "speciesId": 224,
     "numberPokedex": 224,
     "name": "Octillery",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Suction Cups",
+    "ab2": "Sniper"
   },
   {
     "speciesId": 225,
     "numberPokedex": 225,
     "name": "Delibird",
     "type1": "Ice",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Vital Spirit",
+    "ab2": "Hustle"
   },
   {
     "speciesId": 226,
     "numberPokedex": 226,
     "name": "Mantine",
     "type1": "Water",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Swift Swim",
+    "ab2": "Water Absorb"
   },
   {
     "speciesId": 227,
     "numberPokedex": 227,
     "name": "Skarmory",
     "type1": "Steel",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Keen Eye",
+    "ab2": "Sturdy"
   },
   {
     "speciesId": 228,
     "numberPokedex": 228,
     "name": "Houndour",
     "type1": "Dark",
-    "type2": "Fire"
+    "type2": "Fire",
+    "ab1": "Early Bird",
+    "ab2": "Flash Fire"
   },
   {
     "speciesId": 229,
     "numberPokedex": 229,
     "name": "Houndoom",
     "type1": "Dark",
-    "type2": "Fire"
+    "type2": "Fire",
+    "ab1": "Early Bird",
+    "ab2": "Flash Fire"
   },
   {
     "speciesId": 230,
     "numberPokedex": 230,
     "name": "Kingdra",
     "type1": "Water",
-    "type2": "Dragon"
+    "type2": "Dragon",
+    "ab1": "Swift Swim",
+    "ab2": "Sniper"
   },
   {
     "speciesId": 231,
     "numberPokedex": 231,
     "name": "Phanpy",
     "type1": "Ground",
-    "type2": null
+    "type2": null,
+    "ab1": "Pickup",
+    "ab2": null
   },
   {
     "speciesId": 232,
     "numberPokedex": 232,
     "name": "Donphan",
     "type1": "Ground",
-    "type2": null
+    "type2": null,
+    "ab1": "Sturdy",
+    "ab2": null
   },
   {
     "speciesId": 233,
     "numberPokedex": 233,
     "name": "Porygon2",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Trace",
+    "ab2": "Download"
   },
   {
     "speciesId": 234,
     "numberPokedex": 234,
     "name": "Stantler",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Intimidate",
+    "ab2": "Frisk"
   },
   {
     "speciesId": 235,
     "numberPokedex": 235,
     "name": "Smeargle",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Own Tempo",
+    "ab2": "Technician"
   },
   {
     "speciesId": 236,
     "numberPokedex": 236,
     "name": "Tyrogue",
     "type1": "Fighting",
-    "type2": null
+    "type2": null,
+    "ab1": "Guts",
+    "ab2": "Steadfast"
   },
   {
     "speciesId": 237,
     "numberPokedex": 237,
     "name": "Hitmontop",
     "type1": "Fighting",
-    "type2": null
+    "type2": null,
+    "ab1": "Intimidate",
+    "ab2": "Technician"
   },
   {
     "speciesId": 238,
     "numberPokedex": 238,
     "name": "Smoochum",
     "type1": "Ice",
-    "type2": "Psychic"
+    "type2": "Psychic",
+    "ab1": "Oblivious",
+    "ab2": "Forewarn"
   },
   {
     "speciesId": 239,
     "numberPokedex": 239,
     "name": "Elekid",
     "type1": "Electric",
-    "type2": null
+    "type2": null,
+    "ab1": "Static",
+    "ab2": null
   },
   {
     "speciesId": 240,
     "numberPokedex": 240,
     "name": "Magby",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Flame Body",
+    "ab2": null
   },
   {
     "speciesId": 241,
     "numberPokedex": 241,
     "name": "Miltank",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Thick Fat",
+    "ab2": "Scrappy"
   },
   {
     "speciesId": 242,
     "numberPokedex": 242,
     "name": "Blissey",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Natural Cure",
+    "ab2": "Serene Grace"
   },
   {
     "speciesId": 243,
     "numberPokedex": 243,
     "name": "Raikou",
     "type1": "Electric",
-    "type2": null
+    "type2": null,
+    "ab1": "Pressure",
+    "ab2": null
   },
   {
     "speciesId": 244,
     "numberPokedex": 244,
     "name": "Entei",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Pressure",
+    "ab2": null
   },
   {
     "speciesId": 245,
     "numberPokedex": 245,
     "name": "Suicune",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Pressure",
+    "ab2": null
   },
   {
     "speciesId": 246,
     "numberPokedex": 246,
     "name": "Larvitar",
     "type1": "Rock",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Guts",
+    "ab2": null
   },
   {
     "speciesId": 247,
     "numberPokedex": 247,
     "name": "Pupitar",
     "type1": "Rock",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Shed Skin",
+    "ab2": null
   },
   {
     "speciesId": 248,
     "numberPokedex": 248,
     "name": "Tyranitar",
     "type1": "Rock",
-    "type2": "Dark"
+    "type2": "Dark",
+    "ab1": "Sand Stream",
+    "ab2": null
   },
   {
     "speciesId": 249,
     "numberPokedex": 249,
     "name": "Lugia",
     "type1": "Psychic",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Pressure",
+    "ab2": null
   },
   {
     "speciesId": 250,
     "numberPokedex": 250,
     "name": "Ho-Oh",
     "type1": "Fire",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Pressure",
+    "ab2": null
   },
   {
     "speciesId": 251,
     "numberPokedex": 251,
     "name": "Celebi",
     "type1": "Psychic",
-    "type2": "Grass"
+    "type2": "Grass",
+    "ab1": "Natural Cure",
+    "ab2": null
   },
   {
     "speciesId": 277,
     "numberPokedex": 252,
     "name": "Treecko",
     "type1": "Grass",
-    "type2": null
+    "type2": null,
+    "ab1": "Overgrow",
+    "ab2": null
   },
   {
     "speciesId": 278,
     "numberPokedex": 253,
     "name": "Grovyle",
     "type1": "Grass",
-    "type2": null
+    "type2": null,
+    "ab1": "Overgrow",
+    "ab2": null
   },
   {
     "speciesId": 279,
     "numberPokedex": 254,
     "name": "Sceptile",
     "type1": "Grass",
-    "type2": null
+    "type2": null,
+    "ab1": "Overgrow",
+    "ab2": null
   },
   {
     "speciesId": 280,
     "numberPokedex": 255,
     "name": "Torchic",
     "type1": "Fire",
-    "type2": null
+    "type2": null,
+    "ab1": "Blaze",
+    "ab2": null
   },
   {
     "speciesId": 281,
     "numberPokedex": 256,
     "name": "Combusken",
     "type1": "Fire",
-    "type2": "Fighting"
+    "type2": "Fighting",
+    "ab1": "Blaze",
+    "ab2": null
   },
   {
     "speciesId": 282,
     "numberPokedex": 257,
     "name": "Blaziken",
     "type1": "Fire",
-    "type2": "Fighting"
+    "type2": "Fighting",
+    "ab1": "Blaze",
+    "ab2": null
   },
   {
     "speciesId": 283,
     "numberPokedex": 258,
     "name": "Mudkip",
     "type1": "Water",
-    "type2": null
+    "type2": null,
+    "ab1": "Torrent",
+    "ab2": null
   },
   {
     "speciesId": 284,
     "numberPokedex": 259,
     "name": "Marshtomp",
     "type1": "Water",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Torrent",
+    "ab2": null
   },
   {
     "speciesId": 285,
     "numberPokedex": 260,
     "name": "Swampert",
     "type1": "Water",
-    "type2": "Ground"
+    "type2": "Ground",
+    "ab1": "Torrent",
+    "ab2": null
   },
   {
     "speciesId": 286,
     "numberPokedex": 261,
     "name": "Poochyena",
     "type1": "Dark",
-    "type2": null
+    "type2": null,
+    "ab1": "Run Away",
+    "ab2": "Quick Feet"
   },
   {
     "speciesId": 287,
     "numberPokedex": 262,
     "name": "Mightyena",
     "type1": "Dark",
-    "type2": null
+    "type2": null,
+    "ab1": "Intimidate",
+    "ab2": "Quick Feet"
   },
   {
     "speciesId": 288,
     "numberPokedex": 263,
     "name": "Zigzagoon",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Pickup",
+    "ab2": "Gluttony"
   },
   {
     "speciesId": 289,
     "numberPokedex": 264,
     "name": "Linoone",
     "type1": "Normal",
-    "type2": null
+    "type2": null,
+    "ab1": "Pickup",
+    "ab2": "Gluttony"
   },
   {
     "speciesId": 290,
     "numberPokedex": 265,
     "name": "Wurmple",
     "type1": "Bug",
-    "type2": null
+    "type2": null,
+    "ab1": "Shield Dust",
+    "ab2": null
   },
   {
     "speciesId": 291,
     "numberPokedex": 266,
     "name": "Silcoon",
     "type1": "Bug",
-    "type2": null
+    "type2": null,
+    "ab1": "Shed Skin",
+    "ab2": null
   },
   {
     "speciesId": 292,
     "numberPokedex": 267,
     "name": "Beautifly",
     "type1": "Bug",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Swarm",
+    "ab2": null
   },
   {
     "speciesId": 293,
     "numberPokedex": 268,
     "name": "Cascoon",
     "type1": "Bug",
-    "type2": null
+    "type2": null,
+    "ab1": "Shed Skin",
+    "ab2": null
   },
   {
     "speciesId": 294,
     "numberPokedex": 269,
     "name": "Dustox",
     "type1": "Bug",
-    "type2": "Poison"
+    "type2": "Poison",
+    "ab1": "Shield Dust",
+    "ab2": null
   },
   {
     "speciesId": 295,
     "numberPokedex": 270,
     "name": "Lotad",
     "type1": "Water",
-    "type2": "Grass"
+    "type2": "Grass",
+    "ab1": "Swift Swim",
+    "ab2": "Rain Dish"
   },
   {
     "speciesId": 296,
     "numberPokedex": 271,
     "name": "Lombre",
     "type1": "Water",
-    "type2": "Grass"
+    "type2": "Grass",
+    "ab1": "Swift Swim",
+    "ab2": "Rain Dish"
   },
   {
     "speciesId": 297,
     "numberPokedex": 272,
     "name": "Ludicolo",
     "type1": "Water",
-    "type2": "Grass"
+    "type2": "Grass",
+    "ab1": "Swift Swim",
+    "ab2": "Rain Dish"
   },
   {
     "speciesId": 298,
     "numberPokedex": 273,
     "name": "Seedot",
     "type1": "Grass",
-    "type2": null
+    "type2": null,
+    "ab1": "Chlorophyll",
+    "ab2": "Early Bird"
   },
   {
     "speciesId": 299,
     "numberPokedex": 274,
     "name": "Nuzleaf",
     "type1": "Grass",
-    "type2": "Dark"
+    "type2": "Dark",
+    "ab1": "Chlorophyll",
+    "ab2": "Early Bird"
   },
   {
     "speciesId": 300,
     "numberPokedex": 275,
     "name": "Shiftry",
     "type1": "Grass",
-    "type2": "Dark"
-  },
-  {
-    "speciesId": 301,
-    "numberPokedex": 276,
-    "name": "Taillow",
-    "type1": "Normal",
-    "type2": "Flying"
-  },
-  {
-    "speciesId": 302,
-    "numberPokedex": 277,
-    "name": "Swellow",
-    "type1": "Normal",
-    "type2": "Flying"
-  },
-  {
-    "speciesId": 303,
-    "numberPokedex": 278,
-    "name": "Wingull",
-    "type1": "Water",
-    "type2": "Flying"
+    "type2": "Dark",
+    "ab1": "Chlorophyll",
+    "ab2": "Early Bird"
   },
   {
     "speciesId": 304,
-    "numberPokedex": 279,
-    "name": "Pelipper",
-    "type1": "Water",
-    "type2": "Flying"
+    "numberPokedex": 276,
+    "name": "Taillow",
+    "type1": "Normal",
+    "type2": "Flying",
+    "ab1": "Guts",
+    "ab2": null
   },
   {
     "speciesId": 305,
-    "numberPokedex": 280,
-    "name": "Ralts",
-    "type1": "Psychic",
-    "type2": "Fairy"
-  },
-  {
-    "speciesId": 306,
-    "numberPokedex": 281,
-    "name": "Kirlia",
-    "type1": "Psychic",
-    "type2": "Fairy"
-  },
-  {
-    "speciesId": 307,
-    "numberPokedex": 282,
-    "name": "Gardevoir",
-    "type1": "Psychic",
-    "type2": "Fairy"
-  },
-  {
-    "speciesId": 308,
-    "numberPokedex": 283,
-    "name": "Surskit",
-    "type1": "Bug",
-    "type2": "Water"
+    "numberPokedex": 277,
+    "name": "Swellow",
+    "type1": "Normal",
+    "type2": "Flying",
+    "ab1": "Guts",
+    "ab2": null
   },
   {
     "speciesId": 309,
-    "numberPokedex": 284,
-    "name": "Masquerain",
-    "type1": "Bug",
-    "type2": "Flying"
+    "numberPokedex": 278,
+    "name": "Wingull",
+    "type1": "Water",
+    "type2": "Flying",
+    "ab1": "Keen Eye",
+    "ab2": "Hydration"
   },
   {
     "speciesId": 310,
-    "numberPokedex": 285,
-    "name": "Shroomish",
-    "type1": "Grass",
-    "type2": null
-  },
-  {
-    "speciesId": 311,
-    "numberPokedex": 286,
-    "name": "Breloom",
-    "type1": "Grass",
-    "type2": "Fighting"
-  },
-  {
-    "speciesId": 312,
-    "numberPokedex": 287,
-    "name": "Slakoth",
-    "type1": "Normal",
-    "type2": null
-  },
-  {
-    "speciesId": 313,
-    "numberPokedex": 288,
-    "name": "Vigoroth",
-    "type1": "Normal",
-    "type2": null
-  },
-  {
-    "speciesId": 314,
-    "numberPokedex": 289,
-    "name": "Slaking",
-    "type1": "Normal",
-    "type2": null
-  },
-  {
-    "speciesId": 315,
-    "numberPokedex": 290,
-    "name": "Nincada",
-    "type1": "Bug",
-    "type2": "Ground"
-  },
-  {
-    "speciesId": 316,
-    "numberPokedex": 291,
-    "name": "Ninjask",
-    "type1": "Bug",
-    "type2": "Flying"
-  },
-  {
-    "speciesId": 317,
-    "numberPokedex": 292,
-    "name": "Shedinja",
-    "type1": "Bug",
-    "type2": "Ghost"
-  },
-  {
-    "speciesId": 318,
-    "numberPokedex": 293,
-    "name": "Whismur",
-    "type1": "Normal",
-    "type2": null
-  },
-  {
-    "speciesId": 319,
-    "numberPokedex": 294,
-    "name": "Loudred",
-    "type1": "Normal",
-    "type2": null
-  },
-  {
-    "speciesId": 320,
-    "numberPokedex": 295,
-    "name": "Exploud",
-    "type1": "Normal",
-    "type2": null
-  },
-  {
-    "speciesId": 321,
-    "numberPokedex": 296,
-    "name": "Makuhita",
-    "type1": "Fighting",
-    "type2": null
-  },
-  {
-    "speciesId": 322,
-    "numberPokedex": 297,
-    "name": "Hariyama",
-    "type1": "Fighting",
-    "type2": null
-  },
-  {
-    "speciesId": 323,
-    "numberPokedex": 298,
-    "name": "Azurill",
-    "type1": "Normal",
-    "type2": null
-  },
-  {
-    "speciesId": 324,
-    "numberPokedex": 299,
-    "name": "Nosepass",
-    "type1": "Rock",
-    "type2": null
-  },
-  {
-    "speciesId": 325,
-    "numberPokedex": 300,
-    "name": "Skitty",
-    "type1": "Normal",
-    "type2": null
-  },
-  {
-    "speciesId": 326,
-    "numberPokedex": 301,
-    "name": "Delcatty",
-    "type1": "Normal",
-    "type2": null
-  },
-  {
-    "speciesId": 327,
-    "numberPokedex": 302,
-    "name": "Sableye",
-    "type1": "Dark",
-    "type2": "Ghost"
-  },
-  {
-    "speciesId": 328,
-    "numberPokedex": 303,
-    "name": "Mawile",
-    "type1": "Steel",
-    "type2": "Fairy"
-  },
-  {
-    "speciesId": 329,
-    "numberPokedex": 304,
-    "name": "Aron",
-    "type1": "Steel",
-    "type2": "Rock"
-  },
-  {
-    "speciesId": 330,
-    "numberPokedex": 305,
-    "name": "Lairon",
-    "type1": "Steel",
-    "type2": "Rock"
-  },
-  {
-    "speciesId": 331,
-    "numberPokedex": 306,
-    "name": "Aggron",
-    "type1": "Steel",
-    "type2": "Rock"
-  },
-  {
-    "speciesId": 332,
-    "numberPokedex": 307,
-    "name": "Meditite",
-    "type1": "Fighting",
-    "type2": "Psychic"
-  },
-  {
-    "speciesId": 333,
-    "numberPokedex": 308,
-    "name": "Medicham",
-    "type1": "Fighting",
-    "type2": "Psychic"
-  },
-  {
-    "speciesId": 334,
-    "numberPokedex": 309,
-    "name": "Electrike",
-    "type1": "Electric",
-    "type2": null
-  },
-  {
-    "speciesId": 335,
-    "numberPokedex": 310,
-    "name": "Manectric",
-    "type1": "Electric",
-    "type2": null
-  },
-  {
-    "speciesId": 336,
-    "numberPokedex": 311,
-    "name": "Plusle",
-    "type1": "Electric",
-    "type2": null
-  },
-  {
-    "speciesId": 337,
-    "numberPokedex": 312,
-    "name": "Minun",
-    "type1": "Electric",
-    "type2": null
-  },
-  {
-    "speciesId": 338,
-    "numberPokedex": 313,
-    "name": "Volbeat",
-    "type1": "Bug",
-    "type2": null
-  },
-  {
-    "speciesId": 339,
-    "numberPokedex": 314,
-    "name": "Illumise",
-    "type1": "Bug",
-    "type2": null
-  },
-  {
-    "speciesId": 340,
-    "numberPokedex": 315,
-    "name": "Roselia",
-    "type1": "Grass",
-    "type2": "Poison"
-  },
-  {
-    "speciesId": 366,
-    "numberPokedex": 341,
-    "name": "Corphish",
+    "numberPokedex": 279,
+    "name": "Pelipper",
     "type1": "Water",
-    "type2": null
-  },
-  {
-    "speciesId": 367,
-    "numberPokedex": 342,
-    "name": "Crawdaunt",
-    "type1": "Water",
-    "type2": "Dark"
-  },
-  {
-    "speciesId": 368,
-    "numberPokedex": 343,
-    "name": "Baltoy",
-    "type1": "Ground",
-    "type2": "Psychic"
-  },
-  {
-    "speciesId": 369,
-    "numberPokedex": 344,
-    "name": "Claydol",
-    "type1": "Ground",
-    "type2": "Psychic"
-  },
-  {
-    "speciesId": 370,
-    "numberPokedex": 345,
-    "name": "Lileep",
-    "type1": "Rock",
-    "type2": "Grass"
-  },
-  {
-    "speciesId": 371,
-    "numberPokedex": 346,
-    "name": "Cradily",
-    "type1": "Rock",
-    "type2": "Grass"
-  },
-  {
-    "speciesId": 372,
-    "numberPokedex": 347,
-    "name": "Anorith",
-    "type1": "Rock",
-    "type2": "Bug"
-  },
-  {
-    "speciesId": 373,
-    "numberPokedex": 348,
-    "name": "Armaldo",
-    "type1": "Rock",
-    "type2": "Bug"
-  },
-  {
-    "speciesId": 374,
-    "numberPokedex": 349,
-    "name": "Feebas",
-    "type1": "Water",
-    "type2": null
-  },
-  {
-    "speciesId": 375,
-    "numberPokedex": 350,
-    "name": "Milotic",
-    "type1": "Water",
-    "type2": null
-  },
-  {
-    "speciesId": 376,
-    "numberPokedex": 351,
-    "name": "Castform",
-    "type1": "Normal",
-    "type2": null
-  },
-  {
-    "speciesId": 377,
-    "numberPokedex": 352,
-    "name": "Kecleon",
-    "type1": "Normal",
-    "type2": null
-  },
-  {
-    "speciesId": 378,
-    "numberPokedex": 353,
-    "name": "Shuppet",
-    "type1": "Ghost",
-    "type2": null
-  },
-  {
-    "speciesId": 379,
-    "numberPokedex": 354,
-    "name": "Banette",
-    "type1": "Ghost",
-    "type2": null
-  },
-  {
-    "speciesId": 380,
-    "numberPokedex": 355,
-    "name": "Duskull",
-    "type1": "Ghost",
-    "type2": null
-  },
-  {
-    "speciesId": 381,
-    "numberPokedex": 356,
-    "name": "Dusclops",
-    "type1": "Ghost",
-    "type2": null
-  },
-  {
-    "speciesId": 382,
-    "numberPokedex": 357,
-    "name": "Tropius",
-    "type1": "Grass",
-    "type2": "Flying"
-  },
-  {
-    "speciesId": 383,
-    "numberPokedex": 358,
-    "name": "Chimecho",
-    "type1": "Psychic",
-    "type2": null
-  },
-  {
-    "speciesId": 384,
-    "numberPokedex": 359,
-    "name": "Absol",
-    "type1": "Dark",
-    "type2": null
-  },
-  {
-    "speciesId": 385,
-    "numberPokedex": 360,
-    "name": "Wynaut",
-    "type1": "Psychic",
-    "type2": null
-  },
-  {
-    "speciesId": 386,
-    "numberPokedex": 361,
-    "name": "Snorunt",
-    "type1": "Ice",
-    "type2": null
-  },
-  {
-    "speciesId": 387,
-    "numberPokedex": 362,
-    "name": "Glalie",
-    "type1": "Ice",
-    "type2": null
-  },
-  {
-    "speciesId": 388,
-    "numberPokedex": 363,
-    "name": "Spheal",
-    "type1": "Ice",
-    "type2": "Water"
-  },
-  {
-    "speciesId": 389,
-    "numberPokedex": 364,
-    "name": "Sealeo",
-    "type1": "Ice",
-    "type2": "Water"
-  },
-  {
-    "speciesId": 390,
-    "numberPokedex": 365,
-    "name": "Walrein",
-    "type1": "Ice",
-    "type2": "Water"
-  },
-  {
-    "speciesId": 391,
-    "numberPokedex": 366,
-    "name": "Clamperl",
-    "type1": "Water",
-    "type2": null
+    "type2": "Flying",
+    "ab1": "Keen Eye",
+    "ab2": "Drizzle"
   },
   {
     "speciesId": 392,
-    "numberPokedex": 367,
-    "name": "Huntail",
-    "type1": "Water",
-    "type2": null
+    "numberPokedex": 280,
+    "name": "Ralts",
+    "type1": "Psychic",
+    "type2": "Fairy",
+    "ab1": "Synchronize",
+    "ab2": "Trace"
   },
   {
     "speciesId": 393,
-    "numberPokedex": 368,
-    "name": "Gorebyss",
-    "type1": "Water",
-    "type2": null
+    "numberPokedex": 281,
+    "name": "Kirlia",
+    "type1": "Psychic",
+    "type2": "Fairy",
+    "ab1": "Synchronize",
+    "ab2": "Trace"
   },
   {
     "speciesId": 394,
-    "numberPokedex": 369,
-    "name": "Relicanth",
-    "type1": "Water",
-    "type2": "Rock"
+    "numberPokedex": 282,
+    "name": "Gardevoir",
+    "type1": "Psychic",
+    "type2": "Fairy",
+    "ab1": "Synchronize",
+    "ab2": "Trace"
   },
   {
-    "speciesId": 395,
-    "numberPokedex": 370,
-    "name": "Luvdisc",
-    "type1": "Water",
-    "type2": null
+    "speciesId": 311,
+    "numberPokedex": 283,
+    "name": "Surskit",
+    "type1": "Bug",
+    "type2": "Water",
+    "ab1": "Swift Swim",
+    "ab2": null
   },
   {
-    "speciesId": 396,
-    "numberPokedex": 371,
-    "name": "Bagon",
-    "type1": "Dragon",
-    "type2": null
+    "speciesId": 312,
+    "numberPokedex": 284,
+    "name": "Masquerain",
+    "type1": "Bug",
+    "type2": "Flying",
+    "ab1": "Intimidate",
+    "ab2": null
   },
   {
-    "speciesId": 397,
-    "numberPokedex": 372,
-    "name": "Shelgon",
-    "type1": "Dragon",
-    "type2": null
+    "speciesId": 306,
+    "numberPokedex": 285,
+    "name": "Shroomish",
+    "type1": "Grass",
+    "type2": null,
+    "ab1": "Effect Spore",
+    "ab2": "Poison Heal"
   },
   {
-    "speciesId": 398,
-    "numberPokedex": 373,
-    "name": "Salamence",
-    "type1": "Dragon",
-    "type2": "Flying"
+    "speciesId": 307,
+    "numberPokedex": 286,
+    "name": "Breloom",
+    "type1": "Grass",
+    "type2": "Fighting",
+    "ab1": "Effect Spore",
+    "ab2": "Poison Heal"
   },
   {
-    "speciesId": 399,
-    "numberPokedex": 374,
-    "name": "Beldum",
-    "type1": "Steel",
-    "type2": "Psychic"
+    "speciesId": 364,
+    "numberPokedex": 287,
+    "name": "Slakoth",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Truant",
+    "ab2": null
   },
   {
-    "speciesId": 400,
-    "numberPokedex": 375,
-    "name": "Metang",
-    "type1": "Steel",
-    "type2": "Psychic"
+    "speciesId": 365,
+    "numberPokedex": 288,
+    "name": "Vigoroth",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Vital Spirit",
+    "ab2": null
   },
   {
-    "speciesId": 401,
-    "numberPokedex": 376,
-    "name": "Metagross",
-    "type1": "Steel",
-    "type2": "Psychic"
+    "speciesId": 366,
+    "numberPokedex": 289,
+    "name": "Slaking",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Truant",
+    "ab2": null
   },
   {
-    "speciesId": 402,
-    "numberPokedex": 377,
-    "name": "Regirock",
+    "speciesId": 301,
+    "numberPokedex": 290,
+    "name": "Nincada",
+    "type1": "Bug",
+    "type2": "Ground",
+    "ab1": "Compound Eyes",
+    "ab2": null
+  },
+  {
+    "speciesId": 302,
+    "numberPokedex": 291,
+    "name": "Ninjask",
+    "type1": "Bug",
+    "type2": "Flying",
+    "ab1": "Speed Boost",
+    "ab2": null
+  },
+  {
+    "speciesId": 303,
+    "numberPokedex": 292,
+    "name": "Shedinja",
+    "type1": "Bug",
+    "type2": "Ghost",
+    "ab1": "Wonder Guard",
+    "ab2": null
+  },
+  {
+    "speciesId": 370,
+    "numberPokedex": 293,
+    "name": "Whismur",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Soundproof",
+    "ab2": null
+  },
+  {
+    "speciesId": 371,
+    "numberPokedex": 294,
+    "name": "Loudred",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Soundproof",
+    "ab2": null
+  },
+  {
+    "speciesId": 372,
+    "numberPokedex": 295,
+    "name": "Exploud",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Soundproof",
+    "ab2": null
+  },
+  {
+    "speciesId": 335,
+    "numberPokedex": 296,
+    "name": "Makuhita",
+    "type1": "Fighting",
+    "type2": null,
+    "ab1": "Thick Fat",
+    "ab2": "Guts"
+  },
+  {
+    "speciesId": 336,
+    "numberPokedex": 297,
+    "name": "Hariyama",
+    "type1": "Fighting",
+    "type2": null,
+    "ab1": "Thick Fat",
+    "ab2": "Guts"
+  },
+  {
+    "speciesId": 350,
+    "numberPokedex": 298,
+    "name": "Azurill",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Thick Fat",
+    "ab2": "Huge Power"
+  },
+  {
+    "speciesId": 320,
+    "numberPokedex": 299,
+    "name": "Nosepass",
     "type1": "Rock",
-    "type2": null
+    "type2": null,
+    "ab1": "Sturdy",
+    "ab2": "Magnet Pull"
   },
   {
-    "speciesId": 403,
-    "numberPokedex": 378,
-    "name": "Regice",
-    "type1": "Ice",
-    "type2": null
+    "speciesId": 315,
+    "numberPokedex": 300,
+    "name": "Skitty",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Cute Charm",
+    "ab2": "Normalize"
   },
   {
-    "speciesId": 404,
-    "numberPokedex": 379,
-    "name": "Registeel",
+    "speciesId": 316,
+    "numberPokedex": 301,
+    "name": "Delcatty",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Cute Charm",
+    "ab2": "Normalize"
+  },
+  {
+    "speciesId": 322,
+    "numberPokedex": 302,
+    "name": "Sableye",
+    "type1": "Dark",
+    "type2": "Ghost",
+    "ab1": "Keen Eye",
+    "ab2": "Stall"
+  },
+  {
+    "speciesId": 355,
+    "numberPokedex": 303,
+    "name": "Mawile",
     "type1": "Steel",
-    "type2": null
+    "type2": "Fairy",
+    "ab1": "Hyper Cutter",
+    "ab2": "Intimidate"
   },
   {
-    "speciesId": 405,
-    "numberPokedex": 380,
-    "name": "Latias",
-    "type1": "Dragon",
-    "type2": "Psychic"
+    "speciesId": 382,
+    "numberPokedex": 304,
+    "name": "Aron",
+    "type1": "Steel",
+    "type2": "Rock",
+    "ab1": "Sturdy",
+    "ab2": "Rock Head"
   },
   {
-    "speciesId": 406,
-    "numberPokedex": 381,
-    "name": "Latios",
-    "type1": "Dragon",
-    "type2": "Psychic"
+    "speciesId": 383,
+    "numberPokedex": 305,
+    "name": "Lairon",
+    "type1": "Steel",
+    "type2": "Rock",
+    "ab1": "Sturdy",
+    "ab2": "Rock Head"
   },
   {
-    "speciesId": 407,
-    "numberPokedex": 382,
-    "name": "Kyogre",
+    "speciesId": 384,
+    "numberPokedex": 306,
+    "name": "Aggron",
+    "type1": "Steel",
+    "type2": "Rock",
+    "ab1": "Sturdy",
+    "ab2": "Rock Head"
+  },
+  {
+    "speciesId": 356,
+    "numberPokedex": 307,
+    "name": "Meditite",
+    "type1": "Fighting",
+    "type2": "Psychic",
+    "ab1": "Pure Power",
+    "ab2": null
+  },
+  {
+    "speciesId": 357,
+    "numberPokedex": 308,
+    "name": "Medicham",
+    "type1": "Fighting",
+    "type2": "Psychic",
+    "ab1": "Pure Power",
+    "ab2": null
+  },
+  {
+    "speciesId": 337,
+    "numberPokedex": 309,
+    "name": "Electrike",
+    "type1": "Electric",
+    "type2": null,
+    "ab1": "Static",
+    "ab2": "Lightning Rod"
+  },
+  {
+    "speciesId": 338,
+    "numberPokedex": 310,
+    "name": "Manectric",
+    "type1": "Electric",
+    "type2": null,
+    "ab1": "Static",
+    "ab2": "Lightning Rod"
+  },
+  {
+    "speciesId": 353,
+    "numberPokedex": 311,
+    "name": "Plusle",
+    "type1": "Electric",
+    "type2": null,
+    "ab1": "Plus",
+    "ab2": null
+  },
+  {
+    "speciesId": 354,
+    "numberPokedex": 312,
+    "name": "Minun",
+    "type1": "Electric",
+    "type2": null,
+    "ab1": "Minus",
+    "ab2": null
+  },
+  {
+    "speciesId": 386,
+    "numberPokedex": 313,
+    "name": "Volbeat",
+    "type1": "Bug",
+    "type2": null,
+    "ab1": "Illuminate",
+    "ab2": "Swarm"
+  },
+  {
+    "speciesId": 387,
+    "numberPokedex": 314,
+    "name": "Illumise",
+    "type1": "Bug",
+    "type2": null,
+    "ab1": "Oblivious",
+    "ab2": "Tinted Lens"
+  },
+  {
+    "speciesId": 363,
+    "numberPokedex": 315,
+    "name": "Roselia",
+    "type1": "Grass",
+    "type2": "Poison",
+    "ab1": "Natural Cure",
+    "ab2": "Poison Point"
+  },
+  {
+    "speciesId": 367,
+    "numberPokedex": 316,
+    "name": "Gulpin",
+    "type1": "Poison",
+    "type2": null,
+    "ab1": "Liquid Ooze",
+    "ab2": "Sticky Hold"
+  },
+  {
+    "speciesId": 368,
+    "numberPokedex": 317,
+    "name": "Swalot",
+    "type1": "Poison",
+    "type2": null,
+    "ab1": "Liquid Ooze",
+    "ab2": "Sticky Hold"
+  },
+  {
+    "speciesId": 330,
+    "numberPokedex": 318,
+    "name": "Carvanha",
     "type1": "Water",
-    "type2": null
+    "type2": "Dark",
+    "ab1": "Rough Skin",
+    "ab2": null
   },
   {
-    "speciesId": 408,
-    "numberPokedex": 383,
-    "name": "Groudon",
+    "speciesId": 331,
+    "numberPokedex": 319,
+    "name": "Sharpedo",
+    "type1": "Water",
+    "type2": "Dark",
+    "ab1": "Rough Skin",
+    "ab2": null
+  },
+  {
+    "speciesId": 313,
+    "numberPokedex": 320,
+    "name": "Wailmer",
+    "type1": "Water",
+    "type2": null,
+    "ab1": "Water Veil",
+    "ab2": "Oblivious"
+  },
+  {
+    "speciesId": 314,
+    "numberPokedex": 321,
+    "name": "Wailord",
+    "type1": "Water",
+    "type2": null,
+    "ab1": "Water Veil",
+    "ab2": "Oblivious"
+  },
+  {
+    "speciesId": 339,
+    "numberPokedex": 322,
+    "name": "Numel",
+    "type1": "Fire",
+    "type2": "Ground",
+    "ab1": "Oblivious",
+    "ab2": "Simple"
+  },
+  {
+    "speciesId": 340,
+    "numberPokedex": 323,
+    "name": "Camerupt",
+    "type1": "Fire",
+    "type2": "Ground",
+    "ab1": "Magma Armor",
+    "ab2": "Solid Rock"
+  },
+  {
+    "speciesId": 321,
+    "numberPokedex": 324,
+    "name": "Torkoal",
+    "type1": "Fire",
+    "type2": null,
+    "ab1": "White Smoke",
+    "ab2": null
+  },
+  {
+    "speciesId": 351,
+    "numberPokedex": 325,
+    "name": "Spoink",
+    "type1": "Psychic",
+    "type2": null,
+    "ab1": "Thick Fat",
+    "ab2": "Own Tempo"
+  },
+  {
+    "speciesId": 352,
+    "numberPokedex": 326,
+    "name": "Grumpig",
+    "type1": "Psychic",
+    "type2": null,
+    "ab1": "Thick Fat",
+    "ab2": "Own Tempo"
+  },
+  {
+    "speciesId": 308,
+    "numberPokedex": 327,
+    "name": "Spinda",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Own Tempo",
+    "ab2": "Tangled Feet"
+  },
+  {
+    "speciesId": 332,
+    "numberPokedex": 328,
+    "name": "Trapinch",
     "type1": "Ground",
-    "type2": null
+    "type2": null,
+    "ab1": "Hyper Cutter",
+    "ab2": "Arena Trap"
   },
   {
-    "speciesId": 409,
-    "numberPokedex": 384,
-    "name": "Rayquaza",
+    "speciesId": 333,
+    "numberPokedex": 329,
+    "name": "Vibrava",
+    "type1": "Ground",
+    "type2": "Dragon",
+    "ab1": "Levitate",
+    "ab2": null
+  },
+  {
+    "speciesId": 334,
+    "numberPokedex": 330,
+    "name": "Flygon",
+    "type1": "Ground",
+    "type2": "Dragon",
+    "ab1": "Levitate",
+    "ab2": null
+  },
+  {
+    "speciesId": 344,
+    "numberPokedex": 331,
+    "name": "Cacnea",
+    "type1": "Grass",
+    "type2": null,
+    "ab1": "Sand Veil",
+    "ab2": null
+  },
+  {
+    "speciesId": 345,
+    "numberPokedex": 332,
+    "name": "Cacturne",
+    "type1": "Grass",
+    "type2": "Dark",
+    "ab1": "Sand Veil",
+    "ab2": null
+  },
+  {
+    "speciesId": 358,
+    "numberPokedex": 333,
+    "name": "Swablu",
+    "type1": "Normal",
+    "type2": "Flying",
+    "ab1": "Natural Cure",
+    "ab2": null
+  },
+  {
+    "speciesId": 359,
+    "numberPokedex": 334,
+    "name": "Altaria",
     "type1": "Dragon",
-    "type2": "Flying"
+    "type2": "Flying",
+    "ab1": "Natural Cure",
+    "ab2": null
   },
   {
-    "speciesId": 410,
-    "numberPokedex": 385,
-    "name": "Jirachi",
-    "type1": "Steel",
-    "type2": "Psychic"
+    "speciesId": 380,
+    "numberPokedex": 335,
+    "name": "Zangoose",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Immunity",
+    "ab2": null
+  },
+  {
+    "speciesId": 379,
+    "numberPokedex": 336,
+    "name": "Seviper",
+    "type1": "Poison",
+    "type2": null,
+    "ab1": "Shed Skin",
+    "ab2": null
+  },
+  {
+    "speciesId": 348,
+    "numberPokedex": 337,
+    "name": "Lunatone",
+    "type1": "Rock",
+    "type2": "Psychic",
+    "ab1": "Levitate",
+    "ab2": null
+  },
+  {
+    "speciesId": 349,
+    "numberPokedex": 338,
+    "name": "Solrock",
+    "type1": "Rock",
+    "type2": "Psychic",
+    "ab1": "Levitate",
+    "ab2": null
+  },
+  {
+    "speciesId": 323,
+    "numberPokedex": 339,
+    "name": "Barboach",
+    "type1": "Water",
+    "type2": "Ground",
+    "ab1": "Oblivious",
+    "ab2": "Anticipation"
+  },
+  {
+    "speciesId": 324,
+    "numberPokedex": 340,
+    "name": "Whiscash",
+    "type1": "Water",
+    "type2": "Ground",
+    "ab1": "Oblivious",
+    "ab2": "Anticipation"
+  },
+  {
+    "speciesId": 326,
+    "numberPokedex": 341,
+    "name": "Corphish",
+    "type1": "Water",
+    "type2": null,
+    "ab1": "Hyper Cutter",
+    "ab2": "Shell Armor"
+  },
+  {
+    "speciesId": 327,
+    "numberPokedex": 342,
+    "name": "Crawdaunt",
+    "type1": "Water",
+    "type2": "Dark",
+    "ab1": "Hyper Cutter",
+    "ab2": "Shell Armor"
+  },
+  {
+    "speciesId": 318,
+    "numberPokedex": 343,
+    "name": "Baltoy",
+    "type1": "Ground",
+    "type2": "Psychic",
+    "ab1": "Levitate",
+    "ab2": null
+  },
+  {
+    "speciesId": 319,
+    "numberPokedex": 344,
+    "name": "Claydol",
+    "type1": "Ground",
+    "type2": "Psychic",
+    "ab1": "Levitate",
+    "ab2": null
+  },
+  {
+    "speciesId": 388,
+    "numberPokedex": 345,
+    "name": "Lileep",
+    "type1": "Rock",
+    "type2": "Grass",
+    "ab1": "Suction Cups",
+    "ab2": null
+  },
+  {
+    "speciesId": 389,
+    "numberPokedex": 346,
+    "name": "Cradily",
+    "type1": "Rock",
+    "type2": "Grass",
+    "ab1": "Suction Cups",
+    "ab2": null
+  },
+  {
+    "speciesId": 390,
+    "numberPokedex": 347,
+    "name": "Anorith",
+    "type1": "Rock",
+    "type2": "Bug",
+    "ab1": "Battle Armor",
+    "ab2": null
+  },
+  {
+    "speciesId": 391,
+    "numberPokedex": 348,
+    "name": "Armaldo",
+    "type1": "Rock",
+    "type2": "Bug",
+    "ab1": "Battle Armor",
+    "ab2": null
+  },
+  {
+    "speciesId": 328,
+    "numberPokedex": 349,
+    "name": "Feebas",
+    "type1": "Water",
+    "type2": null,
+    "ab1": "Swift Swim",
+    "ab2": "Oblivious"
+  },
+  {
+    "speciesId": 329,
+    "numberPokedex": 350,
+    "name": "Milotic",
+    "type1": "Water",
+    "type2": null,
+    "ab1": "Marvel Scale",
+    "ab2": null
+  },
+  {
+    "speciesId": 385,
+    "numberPokedex": 351,
+    "name": "Castform",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Forecast",
+    "ab2": null
+  },
+  {
+    "speciesId": 317,
+    "numberPokedex": 352,
+    "name": "Kecleon",
+    "type1": "Normal",
+    "type2": null,
+    "ab1": "Color Change",
+    "ab2": null
+  },
+  {
+    "speciesId": 377,
+    "numberPokedex": 353,
+    "name": "Shuppet",
+    "type1": "Ghost",
+    "type2": null,
+    "ab1": "Insomnia",
+    "ab2": "Frisk"
+  },
+  {
+    "speciesId": 378,
+    "numberPokedex": 354,
+    "name": "Banette",
+    "type1": "Ghost",
+    "type2": null,
+    "ab1": "Insomnia",
+    "ab2": "Frisk"
+  },
+  {
+    "speciesId": 361,
+    "numberPokedex": 355,
+    "name": "Duskull",
+    "type1": "Ghost",
+    "type2": null,
+    "ab1": "Levitate",
+    "ab2": null
+  },
+  {
+    "speciesId": 362,
+    "numberPokedex": 356,
+    "name": "Dusclops",
+    "type1": "Ghost",
+    "type2": null,
+    "ab1": "Pressure",
+    "ab2": null
+  },
+  {
+    "speciesId": 369,
+    "numberPokedex": 357,
+    "name": "Tropius",
+    "type1": "Grass",
+    "type2": "Flying",
+    "ab1": "Chlorophyll",
+    "ab2": "Solar Power"
   },
   {
     "speciesId": 411,
+    "numberPokedex": 358,
+    "name": "Chimecho",
+    "type1": "Psychic",
+    "type2": null,
+    "ab1": "Levitate",
+    "ab2": null
+  },
+  {
+    "speciesId": 376,
+    "numberPokedex": 359,
+    "name": "Absol",
+    "type1": "Dark",
+    "type2": null,
+    "ab1": "Pressure",
+    "ab2": "Super Luck"
+  },
+  {
+    "speciesId": 360,
+    "numberPokedex": 360,
+    "name": "Wynaut",
+    "type1": "Psychic",
+    "type2": null,
+    "ab1": "Shadow Tag",
+    "ab2": null
+  },
+  {
+    "speciesId": 346,
+    "numberPokedex": 361,
+    "name": "Snorunt",
+    "type1": "Ice",
+    "type2": null,
+    "ab1": "Inner Focus",
+    "ab2": "Ice Body"
+  },
+  {
+    "speciesId": 347,
+    "numberPokedex": 362,
+    "name": "Glalie",
+    "type1": "Ice",
+    "type2": null,
+    "ab1": "Inner Focus",
+    "ab2": "Ice Body"
+  },
+  {
+    "speciesId": 341,
+    "numberPokedex": 363,
+    "name": "Spheal",
+    "type1": "Ice",
+    "type2": "Water",
+    "ab1": "Thick Fat",
+    "ab2": "Ice Body"
+  },
+  {
+    "speciesId": 342,
+    "numberPokedex": 364,
+    "name": "Sealeo",
+    "type1": "Ice",
+    "type2": "Water",
+    "ab1": "Thick Fat",
+    "ab2": "Ice Body"
+  },
+  {
+    "speciesId": 343,
+    "numberPokedex": 365,
+    "name": "Walrein",
+    "type1": "Ice",
+    "type2": "Water",
+    "ab1": "Thick Fat",
+    "ab2": "Ice Body"
+  },
+  {
+    "speciesId": 373,
+    "numberPokedex": 366,
+    "name": "Clamperl",
+    "type1": "Water",
+    "type2": null,
+    "ab1": "Shell Armor",
+    "ab2": null
+  },
+  {
+    "speciesId": 374,
+    "numberPokedex": 367,
+    "name": "Huntail",
+    "type1": "Water",
+    "type2": null,
+    "ab1": "Swift Swim",
+    "ab2": null
+  },
+  {
+    "speciesId": 375,
+    "numberPokedex": 368,
+    "name": "Gorebyss",
+    "type1": "Water",
+    "type2": null,
+    "ab1": "Swift Swim",
+    "ab2": null
+  },
+  {
+    "speciesId": 381,
+    "numberPokedex": 369,
+    "name": "Relicanth",
+    "type1": "Water",
+    "type2": "Rock",
+    "ab1": "Swift Swim",
+    "ab2": "Rock Head"
+  },
+  {
+    "speciesId": 325,
+    "numberPokedex": 370,
+    "name": "Luvdisc",
+    "type1": "Water",
+    "type2": null,
+    "ab1": "Swift Swim",
+    "ab2": null
+  },
+  {
+    "speciesId": 395,
+    "numberPokedex": 371,
+    "name": "Bagon",
+    "type1": "Dragon",
+    "type2": null,
+    "ab1": "Rock Head",
+    "ab2": null
+  },
+  {
+    "speciesId": 396,
+    "numberPokedex": 372,
+    "name": "Shelgon",
+    "type1": "Dragon",
+    "type2": null,
+    "ab1": "Rock Head",
+    "ab2": null
+  },
+  {
+    "speciesId": 397,
+    "numberPokedex": 373,
+    "name": "Salamence",
+    "type1": "Dragon",
+    "type2": "Flying",
+    "ab1": "Intimidate",
+    "ab2": null
+  },
+  {
+    "speciesId": 398,
+    "numberPokedex": 374,
+    "name": "Beldum",
+    "type1": "Steel",
+    "type2": "Psychic",
+    "ab1": "Clear Body",
+    "ab2": null
+  },
+  {
+    "speciesId": 399,
+    "numberPokedex": 375,
+    "name": "Metang",
+    "type1": "Steel",
+    "type2": "Psychic",
+    "ab1": "Clear Body",
+    "ab2": null
+  },
+  {
+    "speciesId": 400,
+    "numberPokedex": 376,
+    "name": "Metagross",
+    "type1": "Steel",
+    "type2": "Psychic",
+    "ab1": "Clear Body",
+    "ab2": null
+  },
+  {
+    "speciesId": 401,
+    "numberPokedex": 377,
+    "name": "Regirock",
+    "type1": "Rock",
+    "type2": null,
+    "ab1": "Clear Body",
+    "ab2": null
+  },
+  {
+    "speciesId": 402,
+    "numberPokedex": 378,
+    "name": "Regice",
+    "type1": "Ice",
+    "type2": null,
+    "ab1": "Clear Body",
+    "ab2": null
+  },
+  {
+    "speciesId": 403,
+    "numberPokedex": 379,
+    "name": "Registeel",
+    "type1": "Steel",
+    "type2": null,
+    "ab1": "Clear Body",
+    "ab2": null
+  },
+  {
+    "speciesId": 407,
+    "numberPokedex": 380,
+    "name": "Latias",
+    "type1": "Dragon",
+    "type2": "Psychic",
+    "ab1": "Levitate",
+    "ab2": null
+  },
+  {
+    "speciesId": 408,
+    "numberPokedex": 381,
+    "name": "Latios",
+    "type1": "Dragon",
+    "type2": "Psychic",
+    "ab1": "Levitate",
+    "ab2": null
+  },
+  {
+    "speciesId": 404,
+    "numberPokedex": 382,
+    "name": "Kyogre",
+    "type1": "Water",
+    "type2": null,
+    "ab1": "Drizzle",
+    "ab2": null
+  },
+  {
+    "speciesId": 405,
+    "numberPokedex": 383,
+    "name": "Groudon",
+    "type1": "Ground",
+    "type2": null,
+    "ab1": "Drought",
+    "ab2": null
+  },
+  {
+    "speciesId": 406,
+    "numberPokedex": 384,
+    "name": "Rayquaza",
+    "type1": "Dragon",
+    "type2": "Flying",
+    "ab1": "Air Lock",
+    "ab2": null
+  },
+  {
+    "speciesId": 409,
+    "numberPokedex": 385,
+    "name": "Jirachi",
+    "type1": "Steel",
+    "type2": "Psychic",
+    "ab1": "Serene Grace",
+    "ab2": null
+  },
+  {
+    "speciesId": 410,
     "numberPokedex": 386,
     "name": "Deoxys",
     "type1": "Psychic",
-    "type2": null
+    "type2": null,
+    "ab1": "Pressure",
+    "ab2": null
   }
+
 
 
 
