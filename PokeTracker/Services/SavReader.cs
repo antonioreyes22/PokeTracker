@@ -45,6 +45,7 @@ namespace PokeTracker.Services
             "Calm", "Gentle", "Sassy", "Careful", "Quirky"
         };
 
+
         private async Task<Stream> OpenSaveAsync()
         {
             return await FileSystem.Current.OpenAppPackageFileAsync(savName);
@@ -218,14 +219,24 @@ namespace PokeTracker.Services
                         def = GetDefense(pokemon[i]),
                         spDef = GetSpDefense(pokemon[i]),
                         spe = GetSpeed(pokemon[i]),
-                        
+
                         Level = GetLevel(pokemon[i]),
-
                         ImagePath = $"images/pkmn/{basePokemon.numberPokedex}.png",
-
                         ability = GetAbility(pokemon[i], basePokemon.ab1 ?? "", basePokemon.ab2 ?? ""),
+                        nature = GetNature(pokemon[i]),
 
-                        nature = GetNature(pokemon[i])
+                        evHp = GetEvHp(pokemon[i]),
+                        evAtq = GetEvAttack(pokemon[i]),
+                        evDef = GetEvDefense(pokemon[i]),
+                        evSpe = GetEvSpeed(pokemon[i]),
+                        evSpAtq = GetEvSpAttack(pokemon[i]),
+                        evSpDef = GetEvSpDefense(pokemon[i]),
+
+                        ivAtq = GetIvAttack(pokemon[i]),
+                        ivDef = GetIvDefense(pokemon[i]),
+                        ivSpe = GetIvSpeed(pokemon[i]),
+                        ivSpAtq = GetIvSpAttack(pokemon[i]),
+                        ivSpDef = GetIvSpDefense(pokemon[i]),
                     };
                     finalList.Add(pkmn);
                 }
@@ -298,7 +309,7 @@ namespace PokeTracker.Services
             return BitConverter.ToUInt16(pokemon, 0x5A);
         }
 
-        public ushort GetSpAttack(byte[] pokemon) 
+        public ushort GetSpAttack(byte[] pokemon)
         {
             return BitConverter.ToUInt16(pokemon, 0x60);
         }
@@ -308,22 +319,58 @@ namespace PokeTracker.Services
             return BitConverter.ToUInt16(pokemon, 0x5C);
         }
 
-        public ushort GetSpDefense(byte[] pokemon) 
+        public ushort GetSpDefense(byte[] pokemon)
         {
             return BitConverter.ToUInt16(pokemon, 0x62);
         }
 
-        public ushort GetSpeed(byte[] pokemon) 
+        public ushort GetSpeed(byte[] pokemon)
         {
             return BitConverter.ToUInt16(pokemon, 0x5E);
         }
 
-        public byte GetLevel(byte[] pokemon) 
+        public byte GetLevel(byte[] pokemon)
         {
             return pokemon[0x54];
         }
 
         // ----------------- EV STATS ----------------------- //
+
+        public byte GetEvHp(byte[] pokemon)
+        {
+            byte[] evCondition = GetEvAndCondition(pokemon);
+            return evCondition[0];
+        }
+
+        public byte GetEvAttack(byte[] pokemon)
+        {
+            byte[] evCondition = GetEvAndCondition(pokemon);
+            return evCondition[1];
+        }
+
+        public byte GetEvDefense(byte[] pokemon)
+        {
+            byte[] evCondition = GetEvAndCondition(pokemon);
+            return evCondition[2];
+        }
+
+        public byte GetEvSpeed(byte[] pokemon)
+        {
+            byte[] evCondition = GetEvAndCondition(pokemon);
+            return evCondition[3];
+        }
+
+        public byte GetEvSpAttack(byte[] pokemon)
+        {
+            byte[] evCondition = GetEvAndCondition(pokemon);
+            return evCondition[4];
+        }
+
+        public byte GetEvSpDefense(byte[] pokemon)
+        {
+            byte[] evCondition = GetEvAndCondition(pokemon);
+            return evCondition[5];
+        }
 
         public byte[] GetMiscellaneous(byte[] pokemon)
         {
@@ -353,7 +400,7 @@ namespace PokeTracker.Services
         }
 
 
-        public string GetAbility(byte[] pokemon, string ab1, string ab2) 
+        public string GetAbility(byte[] pokemon, string ab1, string ab2)
         {
             byte[] miscellaneous = GetMiscellaneous(pokemon);
 
@@ -361,18 +408,62 @@ namespace PokeTracker.Services
 
             int abilityIndex = (int)((value >> 31) & 1);
 
-            if(abilityIndex == 0)
+            if (abilityIndex == 0)
                 return ab1;
             else
                 return ab2;
         }
 
-        public string GetNature(byte[] pokemon) 
+        public string GetNature(byte[] pokemon)
         {
             uint personalityValue = BitConverter.ToUInt32(pokemon, 0x00);
             int natureIndex = (int)(personalityValue % 25);
 
             return Natures[natureIndex];
+        }
+
+        // ------- IV STATS -------- //
+
+        public byte GetIvHp(byte[] pokemon)
+        {
+            byte[] miscellaneous = GetMiscellaneous(pokemon);
+            uint value = BitConverter.ToUInt32(miscellaneous, 4);
+            return (byte)(value & 0x1F);
+        }
+
+        public byte GetIvAttack(byte[] pokemon)
+        {
+            byte[] miscellaneous = GetMiscellaneous(pokemon);
+            uint value = BitConverter.ToUInt32(miscellaneous, 4);
+            return (byte)((value >> 5) & 0x1F);
+        }
+
+        public byte GetIvDefense(byte[] pokemon)
+        {
+            byte[] miscellaneous = GetMiscellaneous(pokemon);
+            uint value = BitConverter.ToUInt32(miscellaneous, 4);
+            return (byte)((value >> 10) & 0x1F);
+        }
+
+        public byte GetIvSpeed(byte[] pokemon)
+        {
+            byte[] miscellaneous = GetMiscellaneous(pokemon);
+            uint value = BitConverter.ToUInt32(miscellaneous, 4);
+            return (byte)((value >> 15) & 0x1F);
+        }
+
+        public byte GetIvSpAttack(byte[] pokemon)
+        {
+            byte[] miscellaneous = GetMiscellaneous(pokemon);
+            uint value = BitConverter.ToUInt32(miscellaneous, 4);
+            return (byte)((value >> 20) & 0x1F);
+        }
+
+        public byte GetIvSpDefense(byte[] pokemon)
+        {
+            byte[] miscellaneous = GetMiscellaneous(pokemon);
+            uint value = BitConverter.ToUInt32(miscellaneous, 4);
+            return (byte)((value >> 25) & 0x1F);
         }
     }
 }

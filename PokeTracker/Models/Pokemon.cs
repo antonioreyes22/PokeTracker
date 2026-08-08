@@ -25,5 +25,17 @@ namespace PokeTracker.Models
         public string? ab1 { get; set; }
         public string? ab2 { get; set; }
         public string nature { get; set; }
+        public byte evHp { get; set; }
+        public byte evAtq { get; set; }
+        public byte evDef { get; set; }
+        public byte evSpAtq { get; set; }
+        public byte evSpDef { get; set; }
+        public byte evSpe { get; set; }
+        public byte ivHp { get; set; }
+        public byte ivAtq { get; set; }
+        public byte ivDef { get; set; }
+        public byte ivSpAtq { get; set; }
+        public byte ivSpDef { get; set; }
+        public byte ivSpe { get; set; }
     }
 }

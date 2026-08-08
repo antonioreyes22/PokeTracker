@@ -4,14 +4,25 @@
 @using PokeTracker.Services;
 
 <div class="team-container">
+    @{
+        int index = 0;
+    }
+
     @foreach(Pokemon pokemon in pokemonList)
     {
+        int currentIndex = index;
+
         <div class="pokemon-container">
+            <div class="bttn-container">
+                <button class="stats-bttn" @onclick="() => ChangeStatsView(currentIndex, 0)">ST</button>
+                <button class="ev-bttn" @onclick="() => ChangeStatsView(currentIndex, 1)">EV</button>
+                <button class="iv-bttn" @onclick="() => ChangeStatsView(currentIndex, 2)">IV</button>
+            </div>
             <div class="img-container">
                 <div class="img-pkmn-css"><img src="@pokemon.ImagePath" alt="@pokemon.name" /></div>
                 <div class="types-container">
                     <div class="type1-css" style="@GetTypeStyle(pokemon.type1)">@pokemon.type1</div>
-                    <div class="type2-css" style="@GetTypeStyle("Electric")">Electric</div>
+                    <div class="type2-css" style="@GetTypeStyle(pokemon.type2)">@pokemon.type2</div>
                 </div>
             </div>
 
@@ -37,42 +48,49 @@
 
             <div class="stats-container">
                 <div class="stat">
-                    <span class="label-stat">HP:</span>
-                    <div class="hp-css">@pokemon.hp / @pokemon.maxHp</div>
+                    <span class="label-stat" style="@ChangeColorLabel(currentIndex, pokemon.nature, "HP"); ">HP:</span>
+                    <div class="hp-css" style="@(statsView[currentIndex] != 0 ? "text-align: center;" : "")">
+                        @ChangeStatNumber(currentIndex, "HP")
+                        @(statsView[currentIndex] == 0 ? $"/ {pokemon.maxHp}" : "")
+                    </div>
                 </div>
 
                 <div class="stat">
-                    <span class="label-stat">ATQ:</span>
-                    <div class="atq-css">@pokemon.atq</div>
+                    <span class="label-stat" style="@ChangeColorLabel(currentIndex, pokemon.nature, "ATQ")">ATQ:</span>
+                    <div class="atq-css">@ChangeStatNumber(currentIndex, "ATQ")</div>
                 </div>
 
                 <div class="stat">
-                    <span class="label-stat">SP ATQ:</span>
-                    <div class="spAtq-css">@pokemon.spAtq</div>
+                    <span class="label-stat" style="@ChangeColorLabel(currentIndex, pokemon.nature, "SP ATQ")">SP ATQ:</span>
+                    <div class="spAtq-css">@ChangeStatNumber(currentIndex, "SP ATQ")</div>
                 </div>
 
                 <div class="stat">
-                    <span class="label-stat">DEF:</span>
-                    <div class="def-css">@pokemon.def</div>
+                    <span class="label-stat" style="@ChangeColorLabel(currentIndex, pokemon.nature, "DEF")">DEF:</span>
+                    <div class="def-css">@ChangeStatNumber(currentIndex, "DEF")</div>
                 </div>
 
                 <div class="stat">
-                    <span class="label-stat">SP DEF:</span>
-                    <div class="spDef-css">@pokemon.spDef</div>
+                    <span class="label-stat" style="@ChangeColorLabel(currentIndex, pokemon.nature, "SP DEF")">SP DEF:</span>
+                    <div class="spDef-css">@ChangeStatNumber(currentIndex, "SP DEF")</div>
                 </div>
 
                 <div class="stat">
-                    <span class="label-stat">SPE:</span>
-                    <div class="spe-css">@pokemon.spe</div>
+                    <span class="label-stat" style="@ChangeColorLabel(currentIndex, pokemon.nature, "SPE")">SPE:</span>
+                    <div class="spe-css">@ChangeStatNumber(currentIndex, "SPE")</div>
                 </div>
             </div>
         </div>
+
+        index++;
     }
 </div>
 
 @code {
-    private SavReader savReader = new SavReader("emeraldsav8.sav");
+    private SavReader savReader = new SavReader("emeraldsav7.sav");
     private List<Pokemon> pokemonList = new();
+    private string currentNature = string.Empty;
+    private int[] statsView = new int[6]; // 0 -> Stats | 1 -> EV | 2 -> IV
 
     private readonly Dictionary<string, string> TypeColors = new()
     {
@@ -84,18 +102,180 @@
         { "Dark", "#705746" }, { "Steel", "#B7B7CE" }, { "Fairy", "#D685AD" }
     };
 
+    private readonly Dictionary<string, (string up, string down)> Natures = new()
+        {
+            { "Hardy",   ("", "") },
+            { "Lonely",  ("ATQ", "DEF") },
+            { "Brave",   ("ATQ", "SPE") },
+            { "Adamant", ("ATQ", "SP ATQ") },
+            { "Naughty", ("ATQ", "SP DEF") },
+
+            { "Bold",    ("DEF", "ATQ") },
+            { "Docile",  ("", "") },
+            { "Relaxed", ("DEF", "SPE") },
+            { "Impish",  ("DEF", "SP ATQ") },
+            { "Lax",     ("DEF", "SP DEF") },
+
+            { "Timid",   ("SPE", "ATQ") },
+            { "Hasty",   ("SPE", "DEF") },
+            { "Serious", ("", "") },
+            { "Jolly",   ("SPE", "SP ATQ") },
+            { "Naive",   ("SPE", "SP DEF") },
+
+            { "Modest",  ("SP ATQ", "ATQ") },
+            { "Mild",    ("SP ATQ", "DEF") },
+            { "Quiet",   ("SP ATQ", "SPE") },
+            { "Bashful", ("", "") },
+            { "Rash",    ("SP ATQ", "SP DEF") },
+
+            { "Calm",    ("SP DEF", "ATQ") },
+            { "Gentle",  ("SP DEF", "DEF") },
+            { "Sassy",   ("SP DEF", "SPE") },
+            { "Careful", ("SP DEF", "SP ATQ") },
+            { "Quirky",  ("", "") }
+        };
+
     protected override async Task OnInitializedAsync()
     {
+        // Initialize Stats View to 0
+        statsView = new int[6];
+
         pokemonList = await savReader.ReadTeam();        
     }
 
     private string GetTypeStyle(string type)
     {
+        if (type == null || type == string.Empty)
+            return string.Empty;
+
         if (TypeColors.TryGetValue(type, out var color))
-            return $"background-color: {color};";
+            return $"background-color: {color}; border: solid 1px black;";
 
         return "background-color: gray;";
     }
 
+    private string ApplyColorStat(string nature, string statLabel)
+    {
+        if (Natures.TryGetValue(nature, out var natureEffect))
+        {
+            if (natureEffect.up == statLabel)
+                return "color: #BD3217; font-weight: bold";
+            else if (natureEffect.down == statLabel)
+                return "color: #1725BD; font-weight: bold";
+        }
 
+        return string.Empty;
+    }
+
+    private void ChangeStatsView(int pkmnIndex, int statIndex)
+    {
+        statsView[pkmnIndex] = statIndex;
+    }
+
+    private string ChangeColorLabel(int pkmnIndex, string nature, string statlabel)
+    {
+        switch(statsView[pkmnIndex])
+        {
+            case 0:
+                string natureUpDown = ApplyColorStat(nature, statlabel);
+
+                if (natureUpDown != string.Empty)
+                    return natureUpDown;
+                else
+                    return "color: black;";
+            case 1:
+                return "color: rgb(199, 115, 239);";
+            case 2:
+                return "color: rgb(243, 244, 90)";
+            default:
+                return string.Empty;
+        }
+    }
+
+    private ushort ChangeStatNumber(int pkmnIndex, string stat)
+    {
+        switch(stat)
+        {
+            case "HP":
+                switch (statsView[pkmnIndex])
+                {
+                    case 0:
+                        return pokemonList[pkmnIndex].hp;
+                    case 1:
+                        return pokemonList[pkmnIndex].evHp;
+                    case 2:
+                        return pokemonList[pkmnIndex].ivHp;
+                    default:
+                        return 0;
+                }
+                
+            case "ATQ":
+                switch (statsView[pkmnIndex])
+                {
+                    case 0:
+                        return pokemonList[pkmnIndex].atq;
+                    case 1:
+                        return pokemonList[pkmnIndex].evAtq;
+                    case 2:
+                        return pokemonList[pkmnIndex].ivAtq;
+                    default:
+                        return 0;
+                }
+            
+            case "SP ATQ":
+                switch (statsView[pkmnIndex])
+                {
+                    case 0:
+                        return pokemonList[pkmnIndex].spAtq;
+                    case 1:
+                        return pokemonList[pkmnIndex].evSpAtq;
+                    case 2:
+                        return pokemonList[pkmnIndex].ivSpAtq;
+                    default:
+                        return 0;
+                }
+            
+            case "DEF":
+                switch (statsView[pkmnIndex])
+                {
+                    case 0:
+                        return pokemonList[pkmnIndex].def;
+                    case 1:
+                        return pokemonList[pkmnIndex].evDef;
+                    case 2:
+                        return pokemonList[pkmnIndex].ivDef;
+                    default:
+                        return 0;
+                }
+
+            case "SP DEF":
+                switch (statsView[pkmnIndex])
+                {
+                    case 0:
+                        return pokemonList[pkmnIndex].spDef;
+                    case 1:
+                        return pokemonList[pkmnIndex].evSpDef;
+                    case 2:
+                        return pokemonList[pkmnIndex].ivSpDef;
+                    default:
+                        return 0;
+                }
+
+            case "SPE":
+                switch (statsView[pkmnIndex])
+                {
+                    case 0:
+                        return pokemonList[pkmnIndex].spe;
+                    case 1:
+                        return pokemonList[pkmnIndex].evSpe;
+                    case 2:
+                        return pokemonList[pkmnIndex].ivSpe;
+                    default:
+                        return 0;
+                }
+
+            default:
+                return 0;
+        }
+    }
 }
