@@ -10,6 +10,7 @@ body {
     background-size: cover; /* Ocupa toda la pantalla */
     background-position: center; /* Centrado */
     background-repeat: no-repeat; /* No repetir */
+    background-attachment: fixed;
 }
 
 .page .top-row.main-navbar {
@@ -20,6 +21,7 @@ body {
     align-items: center;
     gap: 40px;
     font-size: 20px;
+    z-index: 11;
     
 }
 

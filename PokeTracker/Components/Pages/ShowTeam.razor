@@ -27,7 +27,20 @@
         { 0xC6, 'L' }, { 0xC7, 'M' }, { 0xC8, 'N' }, { 0xC9, 'O' },
         { 0xCA, 'P' }, { 0xCB, 'Q' }, { 0xCC, 'R' }, { 0xCD, 'S' },
         { 0xCE, 'T' }, { 0xCF, 'U' }, { 0xD0, 'V' }, { 0xD1, 'W' },
-        { 0xD2, 'X' }, { 0xD3, 'Y' }, { 0xD4, 'Z' }
+        { 0xD2, 'X' }, { 0xD3, 'Y' }, { 0xD4, 'Z' }, { 0xD5, 'a' },
+        { 0xD6, 'b'},  { 0xD7, 'c' }, { 0xD8, 'd' }, { 0xD9, 'e' },
+        { 0xDA, 'f'},  { 0xDB, 'g' }, { 0xDC, 'h' }, { 0xDD, 'i' },
+        { 0xDE, 'j'},  { 0xDF, 'k' }, { 0xE0, 'l' }, { 0xE1, 'm' },
+        { 0xE2, 'n'},  { 0xE3, 'o' }, { 0xE4, 'p' }, { 0xE5, 'q' },
+        { 0xE6, 'r'},  { 0xE7, 's' }, { 0xE8, 't' }, { 0xE9, 'u' },
+        { 0xEA, 'v'},  { 0xEB, 'w' }, { 0xEC, 'x' }, { 0xED, 'y' },
+        { 0xEE, 'z'},  { 0xA1, '0' }, { 0xA2, '1' }, { 0xA3, '2' },
+        { 0xA4, '3'},  { 0xA5, '4' }, { 0xA6, '5' }, { 0xA7, '6' },
+        { 0xA8, '7'},  { 0xA9, '8' }, { 0xAA, '9' }, { 0xAB, '!' },
+        { 0xAC, '?'},  { 0xB5, '♂' }, { 0xB6, '♀' }, { 0xBA, '/' },
+        { 0xAE, '-'},  { 0xB0, '…' }, { 0xB1, '"' }, { 0xB2, '"' },
+        { 0xB3, '\''}, { 0xB4, '\'' }, { 0xAD, '.' },
+        { 0xB8, ','}
     };
 
     private readonly Dictionary<int, string> permutations = new Dictionary<int, string>
@@ -64,12 +77,14 @@
         byte[] pokemon3 = GetPokemon(teamSection, 2);
         byte[] pokemon4 = GetPokemon(teamSection, 3);
         byte[] pokemon5 = GetPokemon(teamSection, 4);
+        byte[] pokemon6 = GetPokemon(teamSection, 5);
 
         string nick1 = GetNickname(pokemon1, 0);
         string nick2 = GetNickname(pokemon2, 1);
         string nick3 = GetNickname(pokemon3, 2);
         string nick4 = GetNickname(pokemon4, 3);
         string nick5 = GetNickname(pokemon5, 3);
+        string nick6 = GetNickname(pokemon6, 3);
 
         ushort dex1 = GetPokedexNumber(pokemon1);
         ushort dex2 = GetPokedexNumber(pokemon2);
@@ -80,7 +95,8 @@
         secciones.Add($"Nick del segundo Pokémon: {nick2}, Dex: {dex2}");
         secciones.Add($"Nick del tercer Pokémon: {nick3}, Dex: {dex3}");
         secciones.Add($"Nick del cuarto Pokémon: {nick4}, Dex: {dex4}");
-        secciones.Add($"Nick del cuarto Pokémon: {nick5}");
+        secciones.Add($"Nick del quinto Pokémon: {nick5}");
+        secciones.Add($"Nick del sexto Pokémon: {nick6}");
 
         pokemonList = await savReader.ReadTeam();
 
@@ -109,7 +125,7 @@
 
     private async Task<Stream> OpenSaveAsync()
     {
-        return await FileSystem.Current.OpenAppPackageFileAsync("emeraldsav6.sav");
+        return await FileSystem.Current.OpenAppPackageFileAsync("emeraldsav9.sav");
     }
 
     private byte[] ReadSection(BinaryReader binaryReader, int index)
@@ -171,7 +187,7 @@
             }
         }
 
-        return stringBuilder.ToString();
+        return Convert.ToHexString(nicknameBytes);
     }
 
     private uint GetXorKey(byte[] pokemon)
