@@ -1,5 +1,9 @@
 ﻿@page "/pokedex"
 
+@using PokeTracker.Models;
+@using PokeTracker.Services;
+@inject Services.FileService fileService;
+
 <div class="pokedex-title">
     <h1>Pokédex</h1>
 
@@ -7,14 +11,28 @@
 </div>
 
 <div class="pokedex-container">
-@for(int i=0; i<50; i++)
-{
-    <div class="pkmn-in-pokedex">
-            <img src="@($"images/icons/{i}.png")" alt="Pokémon @i"/>
-    </div>
-}
+    @foreach (int pokemon in caughtPokemon)
+    {
+        <div class="pkmn-in-pokedex">
+            <img src="@($"images/icons/{pokemon}.png")" alt="Pokémon @pokemon" />
+        </div>
+    }
 </div>
 
 @code {
+    private SavReader? savReader;
+    private List<int> caughtPokemon = new();
 
+    protected override async Task OnInitializedAsync()
+    {
+        savReader = new SavReader(fileService.savePath);
+
+        for (int i = 1; i <= 386; i++)
+        {
+            if (await savReader.GetPokemonSeenCaught(i) == 2)
+            {
+                caughtPokemon.Add(i);
+            }
+        }
+    }
 }

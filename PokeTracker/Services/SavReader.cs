@@ -477,5 +477,67 @@ namespace PokeTracker.Services
             uint value = BitConverter.ToUInt32(miscellaneous, 4);
             return (byte)((value >> 25) & 0x1F);
         }
+
+        // ----------------- Pokedex ----------------------- //
+
+
+        private byte[] GetPokedexSection(BinaryReader binaryReader) 
+        {
+            // Comparamos la posicion 0 y la 14
+            byte[] firstSectionId = ReadSection(binaryReader, 0);
+            byte[] secondSectionId = ReadSection(binaryReader, 14);
+            uint firstSectionSaveIndex = BitConverter.ToUInt32(firstSectionId, 0xFFC);
+            uint secondSectionSaveIndex = BitConverter.ToUInt32(secondSectionId, 0xFFC);
+
+            int index = firstSectionSaveIndex > secondSectionSaveIndex ? 0 : 14;
+
+            for (int i = index; i < (index + 14); i++)
+            {
+                byte[] section = ReadSection(binaryReader, i);
+
+                ushort id = BitConverter.ToUInt16(section, 0xFF4);
+
+                if (id == 0)
+                    return section;
+            }
+
+            return null;
+        }
+
+
+        // 0 --> Not seen, 1 --> Seen, 2 --> Caught
+        public async Task<int> GetPokemonSeenCaught(int pokedexNumber) 
+        {
+            // Data
+            Stream stream = await OpenSaveAsync();
+            BinaryReader binaryReader = new BinaryReader(stream);
+            byte[] pokedexSection = GetPokedexSection(binaryReader);
+
+            int pokeNum = pokedexNumber - 1;
+            int byteIndex = pokeNum / 8;
+            int bitIndex = pokeNum % 8;
+
+            byte[] pokedexOwned = pokedexSection
+                .Skip(0x0028)
+                .Take(49)
+                .ToArray();
+
+            bool owned = (pokedexOwned[byteIndex] / (int)Math.Pow(2, bitIndex) & 1) != 0;
+
+            if (owned)
+                return 2;
+
+            byte[] pokedexSeen = pokedexSection
+                .Skip(0x005C)
+                .Take(49)
+                .ToArray();
+
+            bool seen = (pokedexSeen[byteIndex] / (int)Math.Pow(2, bitIndex) & 1) != 0;
+
+            if (seen)
+                return 1;
+
+            return 0;
+        }
     }
 }
