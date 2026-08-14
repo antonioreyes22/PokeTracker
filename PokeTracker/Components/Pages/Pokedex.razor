@@ -1,0 +1,20 @@
+﻿@page "/pokedex"
+
+<div class="pokedex-title">
+    <h1>Pokédex</h1>
+
+    <p>On this page, you can see all the Pokémon you have caught or not. You can select the Regional or National Pokédex</p>
+</div>
+
+<div class="pokedex-container">
+@for(int i=0; i<50; i++)
+{
+    <div class="pkmn-in-pokedex">
+            <img src="@($"images/icons/{i}.png")" alt="Pokémon @i"/>
+    </div>
+}
+</div>
+
+@code {
+
+}

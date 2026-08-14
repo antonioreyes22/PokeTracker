@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using PokeTracker.Services;
 
 namespace PokeTracker
 {
@@ -17,8 +18,10 @@ namespace PokeTracker
 
             builder.Services.AddMauiBlazorWebView();
 
+            builder.Services.AddSingleton<FileService>();
+
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
 #endif
 

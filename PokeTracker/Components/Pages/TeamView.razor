@@ -2,6 +2,7 @@
 @using System.Text
 @using PokeTracker.Models;
 @using PokeTracker.Services;
+@inject Services.FileService fileService;
 
 <div class="team-container">
     @{
@@ -87,7 +88,7 @@
 </div>
 
 @code {
-    private SavReader savReader = new SavReader("emeraldsav9.sav");
+    private SavReader? savReader;
     private List<Pokemon> pokemonList = new();
     private string currentNature = string.Empty;
     private int[] statsView = new int[6]; // 0 -> Stats | 1 -> EV | 2 -> IV
@@ -137,6 +138,8 @@
 
     protected override async Task OnInitializedAsync()
     {
+        savReader = new SavReader(fileService.savePath);
+
         // Initialize Stats View to 0
         statsView = new int[6];
 

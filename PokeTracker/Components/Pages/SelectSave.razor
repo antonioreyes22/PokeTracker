@@ -1,0 +1,77 @@
+﻿@using System.IO;
+@using Microsoft.AspNetCore.Components.Forms;
+@inject Services.FileService fileService;
+
+@page "/selectsave"
+
+<div class="save-text-container">
+    <h1>Select Save File</h1>
+    <p>To inspect a file, you must select your Pokémon Emerald save file, which will have been generated using the game's save option.</p>
+</div>
+
+<div class="select-save-bttn">
+    <div class="save-icon"><i class="bi bi-file-earmark-arrow-down"></i></div>
+    @if (!string.IsNullOrEmpty(fileService.savePath))
+    {
+        <div class="current-file-name">
+            <p>@fileService.fileName</p>
+        </div>
+    }
+    <div class="bttn-save-container">
+    <button @onclick="() => SelectSaveFile()" disabled="@selectingFile">Select SAV</button>
+    @if (!string.IsNullOrEmpty(fileService.savePath))
+    {
+       <div class="remove-save-bttn">
+            <button @onclick="fileService.ClearSaveFile">Remove SAV</button>
+       </div>
+    }
+    </div>
+</div>
+
+@code {
+
+    private bool selectingFile = false;
+
+    public async Task SelectSaveFile()
+    {
+        if(!selectingFile)
+        {
+            selectingFile = true;
+
+            try
+            {
+                var customFileType = new FilePickerFileType(
+                    new Dictionary<DevicePlatform, IEnumerable<string>>
+                    {
+                    { DevicePlatform.WinUI, new[] { ".sav" } }, // file extension
+                    });
+
+                PickOptions options = new()
+                {
+                    PickerTitle = "Please, select an emerald SAV file.",
+                    FileTypes = customFileType,
+                };
+
+
+                var file = await FilePicker.Default.PickAsync(options);
+
+                if (file == null)
+                {
+                    return;
+                }
+                else
+                {
+                    fileService.SetSaveFile(file.FullPath, file.FileName);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                selectingFile = false;
+            }
+        }
+    }
+}

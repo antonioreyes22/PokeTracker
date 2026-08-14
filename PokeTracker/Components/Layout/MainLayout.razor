@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@inject Services.FileService fileService
 
 <div class="page">
     <!--
@@ -8,10 +9,18 @@
     -->
     <main>
         <div class="top-row px-4 main-navbar">
-            <NavLink href="/teamview">Team</NavLink>
-            <NavLink href="/showteam">Show team</NavLink>
-            <a href="#">Pokedex</a>
-            <a href="#">Pokeroulette</a>
+            @if(fileService.savePath == string.Empty || fileService.savePath == null)
+            {
+                <NavLink href="/selectsave">Select Save</NavLink>
+            }
+            else
+            {
+                <NavLink href="/teamview">Team</NavLink>
+                <NavLink href="/showteam">Show team</NavLink>
+                <NavLink href="/selectsave">Select Save</NavLink>
+                <NavLink href="/pokedex">Pokedex</NavLink>
+                <a href="#">Pokeroulette</a>
+            }
         </div>
 
         <article class="content px-4">
@@ -19,3 +28,21 @@
         </article>
     </main>
 </div>
+
+@code{
+    protected override void OnInitialized()
+    {
+        fileService.StateChanged += OnSavePathChanged;
+    }
+
+    private void OnSavePathChanged()
+    {
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        fileService.StateChanged -= OnSavePathChanged;
+    }
+
+}
