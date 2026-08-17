@@ -10,18 +10,78 @@
     <p>On this page, you can see all the Pokémon you have caught or not. You can select the Regional or National Pokédex</p>
 </div>
 
+<div class="bttn-filter-container">
+    <div class="bttn-all"><button @onclick="() => SwitchFilter(0)">All</button></div>
+    <div class="bttn-caught"><button @onclick="() => SwitchFilter(1)">Seen</button></div>
+    <div class="bttn-seen"><button @onclick="() => SwitchFilter(2)">Caught</button></div>
+
+    <div class="bttn-national-dex"><button>National</button></div>
+    <div class="bttn-regional-dex"><button>Regional</button></div>
+</div>
+
 <div class="pokedex-container">
-    @foreach (int pokemon in caughtPokemon)
+    @for(int i=1; i<=386; i++)
     {
-        <div class="pkmn-in-pokedex">
-            <img src="@($"images/icons/{pokemon}.png")" alt="Pokémon @pokemon" />
-        </div>
+            @if(filter == 0)
+            {
+                <div class="pkmn-in-pokedex @PokemonStyle(myPokedex[i - 1])">
+                    <img src="@(myPokedex[i - 1] != 0 ? $"images/icons/{i}.png" : "images/icons/0.png")" alt="Pokémon" />
+                </div>
+            }
+            else
+            {
+                @if(filter <= myPokedex[i-1])
+                {
+                    <div class="pkmn-in-pokedex @PokemonStyle(myPokedex[i - 1])">
+                        <img src="@($"images/icons/{i}.png")" alt="Pokémon" />
+                    </div>
+                }
+                
+            }
     }
 </div>
 
 @code {
     private SavReader? savReader;
-    private List<int> caughtPokemon = new();
+    private List<int> myPokedex = new();
+    private int filter; // 0 = All, 1 = Seen, 2 = Caught
+    private int pokedexFilter; // 0 = National, 1 = Regioanl
+
+    private readonly Dictionary<int, int> nationalDex = new()
+    {
+        { 1, 252 }, { 2, 253 }, { 3, 254 }, { 4, 255 }, { 5, 256 }, { 6, 257 }, { 7, 258 }, { 8, 259 },
+        { 9, 260 }, { 10, 261 }, { 11, 262 }, { 12, 263 }, { 13, 264 }, { 14, 265 }, { 15, 266 },
+        { 16, 267 }, { 17, 268 }, { 18, 269 }, { 19, 270 }, { 20, 271 }, { 21, 272 }, { 22, 273 },
+        { 23, 274 }, { 24, 275 }, { 25, 276 }, { 26, 277 }, { 27, 278 }, { 28, 279 }, { 29, 280 },
+        { 30, 281 }, { 31, 282 }, { 32, 283 }, { 33, 284 }, { 34, 285 }, { 35, 286 }, { 36, 287 },
+        { 37, 288 }, { 38, 289 }, { 39, 63 }, { 40, 64 }, { 41, 65 }, { 42, 290 }, { 43, 291 },
+        { 44, 292 }, { 45, 293 }, { 46, 294 }, { 47, 295 }, { 48, 296 }, { 49, 297 }, { 50, 118 },
+        { 51, 119 }, { 52, 129 }, { 53, 130 }, { 54, 298 }, { 55, 183 }, { 56, 184 }, { 57, 74 },
+        { 58, 75 }, { 59, 76 }, { 60, 299 }, { 61, 300 }, { 62, 301 }, { 63, 41 }, { 64, 42 },
+        { 65, 169 }, { 66, 72 }, { 67, 73 }, { 68, 302 }, { 69, 303 }, { 70, 304 }, { 71, 305 },
+        { 72, 306 }, { 73, 66 }, { 74, 67 }, { 75, 68 }, { 76, 307 }, { 77, 308 }, { 78, 309 },
+        { 79, 310 }, { 80, 311 }, { 81, 312 }, { 82, 81 }, { 83, 82 }, { 84, 100 }, { 85, 101 },
+        { 86, 313 }, { 87, 314 }, { 88, 43 }, { 89, 44 }, { 90, 45 }, { 91, 182 }, { 92, 84 },
+        { 93, 85 }, { 94, 315 }, { 95, 316 }, { 96, 317 }, { 97, 318 }, { 98, 319 }, { 99, 320 },
+        { 100, 321 }, { 101, 322 }, { 102, 323 }, { 103, 218 }, { 104, 219 }, { 105, 324 },
+        { 106, 88 }, { 107, 89 }, { 108, 109 }, { 109, 110 }, { 110, 325 }, { 111, 326 },
+        { 112, 27 }, { 113, 28 }, { 114, 327 }, { 115, 227 }, { 116, 328 }, { 117, 329 },
+        { 118, 330 }, { 119, 331 }, { 120, 332 }, { 121, 333 }, { 122, 334 }, { 123, 335 },
+        { 124, 336 }, { 125, 337 }, { 126, 338 }, { 127, 339 }, { 128, 340 }, { 129, 341 },
+        { 130, 342 }, { 131, 343 }, { 132, 344 }, { 133, 345 }, { 134, 346 }, { 135, 347 },
+        { 136, 348 }, { 137, 174 }, { 138, 39 }, { 139, 40 }, { 140, 349 }, { 141, 350 },
+        { 142, 351 }, { 143, 120 }, { 144, 121 }, { 145, 352 }, { 146, 353 }, { 147, 354 },
+        { 148, 355 }, { 149, 356 }, { 150, 357 }, { 151, 358 }, { 152, 359 }, { 153, 37 },
+        { 154, 38 }, { 155, 172 }, { 156, 25 }, { 157, 26 }, { 158, 54 }, { 159, 55 },
+        { 160, 360 }, { 161, 202 }, { 162, 177 }, { 163, 178 }, { 164, 203 }, { 165, 231 },
+        { 166, 232 }, { 167, 127 }, { 168, 214 }, { 169, 111 }, { 170, 112 }, { 171, 361 },
+        { 172, 362 }, { 173, 363 }, { 174, 364 }, { 175, 365 }, { 176, 366 }, { 177, 367 },
+        { 178, 368 }, { 179, 369 }, { 180, 222 }, { 181, 170 }, { 182, 171 }, { 183, 370 },
+        { 184, 116 }, { 185, 117 }, { 186, 230 }, { 187, 371 }, { 188, 372 }, { 189, 373 },
+        { 190, 374 }, { 191, 375 }, { 192, 376 }, { 193, 377 }, { 194, 378 }, { 195, 379 },
+        { 196, 380 }, { 197, 381 }, { 198, 382 }, { 199, 383 }, { 200, 384 }, { 201, 385 },
+        { 202, 386 },
+    };
 
     protected override async Task OnInitializedAsync()
     {
@@ -31,8 +91,28 @@
         {
             if (await savReader.GetPokemonSeenCaught(i) == 2)
             {
-                caughtPokemon.Add(i);
+                myPokedex.Add(2);
             }
+            else if (await savReader.GetPokemonSeenCaught(i) == 1)
+            {
+                myPokedex.Add(1);
+            }
+            else myPokedex.Add(0);
         }
+    }
+
+    private string PokemonStyle(int value)
+    {
+        return value switch
+        {
+            2 => "caught",
+            1 => "seen",
+            0 => "not-seen"
+        };
+    }
+
+    private void SwitchFilter(int newFilter)
+    {
+        filter = newFilter;
     }
 }
