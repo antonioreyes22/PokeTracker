@@ -15,13 +15,15 @@
     <div class="bttn-caught"><button @onclick="() => SwitchFilter(1)">Seen</button></div>
     <div class="bttn-seen"><button @onclick="() => SwitchFilter(2)">Caught</button></div>
 
-    <div class="bttn-national-dex"><button>National</button></div>
-    <div class="bttn-regional-dex"><button>Regional</button></div>
+    <div class="bttn-national-dex"><button @onclick="() => SwitchPokedex(0)">National</button></div>
+    <div class="bttn-regional-dex"><button @onclick="() => SwitchPokedex(1)">Regional</button></div>
 </div>
 
 <div class="pokedex-container">
-    @for(int i=1; i<=386; i++)
+    @if(pokedexFilter == 0)
     {
+        @for(int i=1; i<=386; i++)
+        {
             @if(filter == 0)
             {
                 <div class="pkmn-in-pokedex @PokemonStyle(myPokedex[i - 1])">
@@ -38,7 +40,30 @@
                 }
                 
             }
+        }
     }
+    else
+    {
+        @foreach (var entry in mapDex)
+        {
+            @if(filter == 0)
+            {
+                <div class="pkmn-in-pokedex @PokemonStyle(myPokedex[entry.Value-1])">
+                    <img src="@(myPokedex[entry.Value-1] != 0 ? $"images/icons/{entry.Value}.png" : "images/icons/0.png")" alt="Pokémon" />
+                </div>
+            }
+            else
+            {
+                @if (filter <= myPokedex[entry.Value-1])
+                {
+                    <div class="pkmn-in-pokedex @PokemonStyle(myPokedex[entry.Value-1])">
+                        <img src="@($"images/icons/{entry.Value}.png")" alt="Pokémon" />
+                    </div>
+                }
+            }
+        }
+    }
+    
 </div>
 
 @code {
@@ -47,7 +72,7 @@
     private int filter; // 0 = All, 1 = Seen, 2 = Caught
     private int pokedexFilter; // 0 = National, 1 = Regioanl
 
-    private readonly Dictionary<int, int> nationalDex = new()
+    private readonly Dictionary<int, int> mapDex = new()
     {
         { 1, 252 }, { 2, 253 }, { 3, 254 }, { 4, 255 }, { 5, 256 }, { 6, 257 }, { 7, 258 }, { 8, 259 },
         { 9, 260 }, { 10, 261 }, { 11, 262 }, { 12, 263 }, { 13, 264 }, { 14, 265 }, { 15, 266 },
@@ -114,5 +139,10 @@
     private void SwitchFilter(int newFilter)
     {
         filter = newFilter;
+    }
+
+    private void SwitchPokedex(int newPokedexFilter)
+    {
+        pokedexFilter = newPokedexFilter;
     }
 }
