@@ -11,15 +11,13 @@
         <div class="top-row px-4 main-navbar">
             @if(fileService.savePath == string.Empty || fileService.savePath == null)
             {
-                <NavLink href="/selectsave">Select Save</NavLink>
+                <NavLink href="/">Select Save</NavLink>
             }
             else
             {
                 <NavLink href="/teamview">Team</NavLink>
-                <NavLink href="/showteam">Show team</NavLink>
-                <NavLink href="/selectsave">Select Save</NavLink>
+                <NavLink href="/">Select Save</NavLink>
                 <NavLink href="/pokedex">Pokedex</NavLink>
-                <a href="#">Pokeroulette</a>
             }
         </div>
 

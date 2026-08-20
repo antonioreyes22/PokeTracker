@@ -10,13 +10,21 @@
     <p>On this page, you can see all the Pokémon you have caught or not. You can select the Regional or National Pokédex</p>
 </div>
 
-<div class="bttn-filter-container">
-    <div class="bttn-all"><button @onclick="() => SwitchFilter(0)">All</button></div>
-    <div class="bttn-caught"><button @onclick="() => SwitchFilter(1)">Seen</button></div>
-    <div class="bttn-seen"><button @onclick="() => SwitchFilter(2)">Caught</button></div>
+<div class="bttn-filter-container">  
+    <div class="pokemon-filter">
+        <select @bind="filter">
+            <option value="0">All</option>
+            <option value="1">Seen</option>
+            <option value="2">Caught</option>
+        </select>
+    </div>
 
-    <div class="bttn-national-dex"><button @onclick="() => SwitchPokedex(0)">National</button></div>
-    <div class="bttn-regional-dex"><button @onclick="() => SwitchPokedex(1)">Regional</button></div>
+    <div class="pokedex-filter">
+        <select @bind="pokedexFilter">
+            <option value="0">National</option>
+            <option value="1">Regional</option>
+        </select>
+    </div>
 </div>
 
 <div class="pokedex-container">

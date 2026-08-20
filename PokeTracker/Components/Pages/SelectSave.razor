@@ -2,7 +2,7 @@
 @using Microsoft.AspNetCore.Components.Forms;
 @inject Services.FileService fileService;
 
-@page "/selectsave"
+@page "/"
 
 <div class="save-text-container">
     <h1>Select Save File</h1>
@@ -13,6 +13,9 @@
     <div class="save-icon"><i class="bi bi-file-earmark-arrow-down"></i></div>
     @if (!string.IsNullOrEmpty(fileService.savePath))
     {
+        <div class="rect-one"></div>
+        <div class="rect-two"></div>
+
         <div class="current-file-name">
             <p>@fileService.fileName</p>
         </div>
